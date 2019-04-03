@@ -15,6 +15,27 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('/login', function () {
+    return view('auth.login');
+});
+
+Route::get('/register', function () {
+    return view('auth.login');
+});
+
+Route::get('/menu', function () {
+    return view('menu');
+});
+
+Route::get('/booking', function () {
+    return view('booking');
+
+});
+
+Route::get('/about', function () {
+    return view('about');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
