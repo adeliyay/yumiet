@@ -40,12 +40,7 @@
 			<div class="container h-full">
 				<div class="wrap_header trans-0-3">
 					<!-- Logo -->
-					<div class="logo">
-						<a href='{{url("/")}}'>
-							<img src="images/logo.jpg" alt="IMG-LOGO" data-logofixed="images/logo.jpg">
-						</a>
-					</div>
-
+					
 					<!-- Menu -->
 					<div class="wrap_menu p-l-45 p-l-0-xl">
 						<nav class="menu">
