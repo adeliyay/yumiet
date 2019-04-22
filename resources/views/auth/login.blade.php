@@ -1,6 +1,12 @@
 @extends('layouts.app')
-@include('layouts.head')
 @section('content')
+<section class="section-booking bg1-pattern p-t-100 p-b-110">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 p-b-30">
+</div>
+</div>
+</div>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">

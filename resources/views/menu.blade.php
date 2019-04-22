@@ -37,7 +37,6 @@
 
 @include('layouts.head')
 
-	
 
 
 	<!-- Title Page -->
