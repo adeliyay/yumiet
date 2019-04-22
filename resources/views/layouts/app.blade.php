@@ -118,10 +118,6 @@
                         @endguest
 									<!-- <a href='{{url("/login")}}'>login</a> -->
 								</li>
-
-								<li>
-									<a href='{{url("/register")}}'>register</a>
-								</li>
 							</ul>
 						</nav>
 					</div>
