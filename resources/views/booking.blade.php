@@ -28,7 +28,8 @@
 						</h3>
 					</div>
 
-					<form class="wrap-form-booking">
+					<form class="wrap-form-booking" method="post" action="{{ route('order.ordered') }}">
+						@csrf
 
 						<div class="row">
 							<div class="col-md-6">
@@ -39,7 +40,7 @@
 
 								<div class="wrap-inputpeople size12 bo2 bo-rad-10 m-t-3 m-b-23">
 									<!-- Select2 -->
-									<select class="selection-1" name="Goals">
+									<select class="selection-1" name="goals" required="required">
 										<option>Regular</option>
 										<option>Weight Loss</option>
 										<option>Muscle Building</option>
@@ -53,7 +54,7 @@
 								</span>
 
 								<div class="wrap-inputdate pos-relative txt10 size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<input class="my-calendar bo-rad-10 sizefull txt10 p-l-20" type="text" name="date">
+									<input class="my-calendar bo-rad-10 sizefull txt10 p-l-20" type="text" name="start" required="required">
 									<i class="btn-calendar fa fa-calendar ab-r-m hov-pointer m-r-18" aria-hidden="true"></i>
 								</div>
 
@@ -64,7 +65,7 @@
 
 								<div class="wrap-inputtime size12 bo2 bo-rad-10 m-t-3 m-b-23">
 									<!-- Select2 -->
-									<select class="selection-1" name="time">
+									<select class="selection-1" name="gender" required="required">
 										<option>Male</option>
 										<option>Female</option>
 										
@@ -82,7 +83,7 @@
 
 								<div class="wrap-inputpeople size12 bo2 bo-rad-10 m-t-3 m-b-23">
 									<!-- Select2 -->
-									<select class="selection-1" name="Time">
+									<select class="selection-1" name="time" required="required">
 										<option>All Time</option>
 										<option>Breakfast</option>
 										<option>Lunch</option>
@@ -99,7 +100,7 @@
 								</span>
 
 								<div class="wrap-inputdate pos-relative txt10 size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<input class="my-calendar bo-rad-10 sizefull txt10 p-l-20" type="text" name="date">
+									<input class="my-calendar bo-rad-10 sizefull txt10 p-l-20" type="text" name="end" required="required">
 									<i class="btn-calendar fa fa-calendar ab-r-m hov-pointer m-r-18" aria-hidden="true"></i>
 								</div>
 
@@ -109,7 +110,7 @@
 								</span>
 
 								<div class="wrap-inputphone size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="phone" placeholder="Phone">
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="phone" placeholder="Phone" required="required">
 								</div>
 									</div>
 								
@@ -118,13 +119,13 @@
 						<span class="txt9">
 							Address
 						</span>
-						<textarea class="bo-rad-10 size35 bo2 txt10 p-l-20 p-t-15 m-b-10 m-t-3" name="Address" placeholder="Address"></textarea>
+						<textarea class="bo-rad-10 size35 bo2 txt10 p-l-20 p-t-15 m-b-10 m-t-3" name="address" placeholder="Address" required="required"></textarea>
 					</div>
 
 						<div class="wrap-btn-booking flex-c-m m-t-6">
 							<!-- Button3 -->
 							<button type="submit" class="btn3 flex-c-m size13 txt11 trans-0-4">
-								Book Table
+								Order
 							</button>
 						</div>
 					</form>

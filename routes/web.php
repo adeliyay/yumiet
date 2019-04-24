@@ -39,3 +39,4 @@ Route::get('/about', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::post('/booking', 'ordercontroller@ordered')->name('order.ordered');
