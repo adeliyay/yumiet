@@ -26,6 +26,6 @@ class ordercontroller extends Controller
         $order->phone = $request->phone;
         $order->address = $request->address;
         $order->save();
-        return redirect()->back();
+        return view('menu.re');
     }
 }

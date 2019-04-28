@@ -74,13 +74,13 @@
 	<!-- Intro -->
 	<section class="section-intro">
 		<div class="header-intro parallax100 t-center p-t-135 p-b-158" style="background-image: url(images/bg-intro-01.jpg);">
-			<span class="tit2 p-l-15 p-r-15">
-				Discover
-			</span>
-
+			
 			<h3 class="tit4 t-center p-l-15 p-r-15 p-t-3">
 				Yumiet
 			</h3>
+			<span class="tit2 p-l-15 p-r-15">
+				Catering
+			</span>
 		</div>
 
 		<div class="content-intro bg-white p-t-77 p-b-133">
@@ -90,20 +90,21 @@
 						<!-- Block1 -->
 						<div class="blo1">
 							<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom">
-								<a href="#"><img src="images/intro-01.jpg" alt="IMG-INTRO"></a>
+								<a href='{{url("/menu")}}'><img src="images/intro01.jpg" alt="IMG-INTRO"></a>
 							</div>
 
 							<div class="wrap-text-blo1 p-t-35">
-								<a href="#"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
+								<h6>.</h6>
+								<a href='{{url("/menu")}}'><h4 class="txt5 color0-hov trans-0-4 m-b-13">
 									Weight Loss
 								</h4></a>
 
 								<p class="m-b-20">
-									Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.
+									Makanan sehat untuk anda yang ingin menurunkan berat badan
 								</p>
 
-								<a href="#" class="txt4">
-									Learn More
+								<a href='{{url("/menu")}}' class="txt4">
+									Look Menu
 									<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
 								</a>
 							</div>
@@ -114,20 +115,21 @@
 						<!-- Block1 -->
 						<div class="blo1">
 							<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom">
-								<a href="#"><img src="images/intro-02.jpg" alt="IMG-INTRO"></a>
+								<a href='{{url("/menu")}}'><img src="images/intro02.jpg" alt="IMG-INTRO"></a>
 							</div>
 
 							<div class="wrap-text-blo1 p-t-35">
-								<a href="#"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
+								<br>
+								<a href='{{url("/menu")}}'><h4 class="txt5 color0-hov trans-0-4 m-b-13">
 									Muscle Building
 								</h4></a>
 
 								<p class="m-b-20">
-									Aliquam eget aliquam magna, quis posuere risus ac justo ipsum nibh urna
+									Makanan sehat untuk anda yang ingin menaikkan massa otot
 								</p>
 
-								<a href="#" class="txt4">
-									Learn More
+								<a href='{{url("/menu")}}' class="txt4">
+									Look Menu
 									<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
 								</a>
 							</div>
@@ -138,20 +140,20 @@
 						<!-- Block1 -->
 						<div class="blo1">
 							<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom">
-								<a href="#"><img src="images/intro-04.jpg" alt="IMG-INTRO"></a>
+								<a href='{{url("/menu")}}'><img src="images/intro03.jpg" alt="IMG-INTRO"></a>
 							</div>
 
 							<div class="wrap-text-blo1 p-t-35">
-								<a href="#"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
+								<a href='{{url("/menu")}}'><h4 class="txt5 color0-hov trans-0-4 m-b-13">
 									Special Needs
 								</h4></a>
 
 								<p class="m-b-20">
-									Sed ornare ligula eget tortor tempor, quis porta tellus dictum.
+									Makanan sehat untuk anda yang memiliki penyakit tertentu
 								</p>
 
-								<a href="#" class="txt4">
-									Learn More
+								<a href='{{url("/menu")}}' class="txt4">
+									Look Menu
 									<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
 								</a>
 							</div>
@@ -177,79 +179,80 @@
 			</div>
 
 			<div class="row">
-				<div class="col-md-8">
+				<div class="col-md-12">
 					<div class="row">
-						<div class="col-sm-6">
+						<div class="col-sm-4">
+							<!-- Item our menu -->
+							<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
+								<img src="images/our-menu-07.jpg" alt="IMG-MENU">
+
+								<!-- Button2 -->
+								<a href='{{url("/menu")}}' class="btn2 flex-c-m txt5 ab-c-m size4">
+									Breakfast
+								</a>
+							</div>
+						</div>
+
+						<div class="col-sm-4">
 							<!-- Item our menu -->
 							<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
 								<img src="images/our-menu-01.jpg" alt="IMG-MENU">
 
 								<!-- Button2 -->
-								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size4">
+								<a href='{{url("/menu")}}' class="btn2 flex-c-m txt5 ab-c-m size5">
 									Lunch
 								</a>
 							</div>
 						</div>
 
-						<div class="col-sm-6">
+						<div class="col-sm-4">
 							<!-- Item our menu -->
 							<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
-								<img src="images/our-menu-05.jpg" alt="IMG-MENU">
+								<img src="images/our-menu-04.jpg" alt="IMG-MENU">
 
 								<!-- Button2 -->
-								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size5">
+								<a href='{{url("/menu")}}' class="btn2 flex-c-m txt5 ab-c-m size5">
 									Dinner
 								</a>
 							</div>
 						</div>
 
-						<div class="col-12">
-							<!-- Item our menu -->
-							<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
-								<img src="images/our-menu-13.jpg" alt="IMG-MENU">
-
-								<!-- Button2 -->
-								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size6">
-									Happy Hour
-								</a>
-							</div>
-						</div>
 					</div>
 				</div>
 
-				<div class="col-md-4">
+				<div class="col-md-12">
 					<div class="row">
-						<div class="col-12">
-							<!-- Item our menu -->
-							<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
-								<img src="images/our-menu-08.jpg" alt="IMG-MENU">
-
-								<!-- Button2 -->
-								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size7">
-									Drink
-								</a>
-							</div>
-						</div>
-
-						<div class="col-12">
-							<!-- Item our menu -->
-							<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
-								<img src="images/our-menu-10.jpg" alt="IMG-MENU">
-
-								<!-- Button2 -->
-								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size8">
-									Starters
-								</a>
-							</div>
-						</div>
-
-						<div class="col-12">
+						
+						<div class="col-4">
 							<!-- Item our menu -->
 							<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
 								<img src="images/our-menu-16.jpg" alt="IMG-MENU">
 
 								<!-- Button2 -->
-								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size9">
+								<a href='{{url("/menu")}}' class="btn2 flex-c-m txt5 ab-c-m size8">
+									Starters
+								</a>
+							</div>
+						</div>
+
+						<div class="col-4">
+							<!-- Item our menu -->
+							<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
+								<img src="images/our-menu-08.jpg" alt="IMG-MENU">
+
+								<!-- Button2 -->
+								<a href='{{url("/menu")}}' class="btn2 flex-c-m txt5 ab-c-m size9">
+									Drink
+								</a>
+							</div>
+						</div>
+						<div class="col-4">
+							<!-- Item our menu -->
+							<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
+								<img src="images/our-menu-20.jpg" alt="IMG-MENU">
+
+								<!-- Button2 -->
+								<a href='{{url("/menu")}}' class="btn2 flex-c-m txt5 ab-c-m size9">
 									Dessert
 								</a>
 							</div>
@@ -381,9 +384,17 @@
 			</span>
 
 			<!-- Button3 -->
+			@guest
 			<button class=" social btn3 flex-c-m size18 txt11 trans-0-4 m-10">
+				<a href ='{{url("/login")}}'> ORDER
+			</button>
+
+            @else
+          <button class=" social btn3 flex-c-m size18 txt11 trans-0-4 m-10">
 				<a href ='{{url("/booking")}}'> ORDER
 			</button>
+           @endguest
+
 		</form>
 	</div>
 
