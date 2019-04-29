@@ -26,6 +26,17 @@ class ordercontroller extends Controller
         $order->phone = $request->phone;
         $order->address = $request->address;
         $order->save();
-        return view('menu.re');
+        if($order->goals=="Regular"){
+            return view('menu.re');
+        }
+        elseif($order->goals=="Weight Loss"){
+            return view('menu.wl');
+        }
+        elseif($order->goals=="Muscle Building"){
+            return view('menu.mb');
+        }
+        elseif($order->goals=="Special Needs"){
+            return view('menu.sn');
+        }
     }
 }

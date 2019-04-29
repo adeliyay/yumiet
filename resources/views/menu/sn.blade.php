@@ -29,14 +29,14 @@
 		<div class="wrap-gallery isotope-grid flex-w p-l-25 p-r-25">
 			<!-- - -->
 			<div class="item-gallery isotope-item bo-rad-10 hov-img-zoom events guests">
-				<img src="images/photo-gallery-13.jpg" alt="IMG-GALLERY">
+				<img src="images/photo-gallery05.jpg" alt="IMG-GALLERY">
 
 				<div class="overlay-item-gallery trans-0-4 flex-c-m">
-					<a class="btn-show-gallery flex-c-m fa fa-spoon" href="images/photo-gallery-13.jpg" data-lightbox="gallery"></a>
+					<a class="btn-show-gallery flex-c-m fa fa-spoon" href="images/photo-gallery05.jpg" data-lightbox="gallery"></a>
 				</div>
 					<div class="wrap-text-blo1 p-t-35">
 								<a href="#"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
-									Weight Loss
+									Special Needs A
 								</h4></a>
 
 								<p class="m-b-20">
@@ -44,7 +44,7 @@
 								</p>
 
 								<a href="#" class="txt4">
-									Learn More
+									See Details
 									<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
 								</a>
 							</div>
@@ -52,14 +52,14 @@
 
 			<!-- - -->
 			<div class="item-gallery isotope-item bo-rad-10 hov-img-zoom food">
-				<img src="images/photo-gallery-14.jpg" alt="IMG-GALLERY">
+				<img src="images/photo-gallery05.jpg" alt="IMG-GALLERY">
 
 				<div class="overlay-item-gallery trans-0-4 flex-c-m">
-					<a class="btn-show-gallery flex-c-m fa fa-spoon" href="images/photo-gallery-14.jpg" data-lightbox="gallery"></a>
+					<a class="btn-show-gallery flex-c-m fa fa-spoon" href="images/photo-gallery05.jpg" data-lightbox="gallery"></a>
 				</div>
 				<div class="wrap-text-blo1 p-t-35">
 								<a href="#"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
-									Weight Loss
+									Special Needs B
 								</h4></a>
 
 								<p class="m-b-20">
@@ -67,7 +67,7 @@
 								</p>
 
 								<a href="#" class="txt4">
-									Learn More
+									See Details
 									<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
 								</a>
 							</div>
@@ -75,14 +75,14 @@
 
 			<!-- - -->
 			<div class="item-gallery isotope-item bo-rad-10 hov-img-zoom events">
-				<img src="images/photo-gallery-15.jpg" alt="IMG-GALLERY">
+				<img src="images/photo-gallery07.jpg" alt="IMG-GALLERY">
 
 				<div class="overlay-item-gallery trans-0-4 flex-c-m">
-					<a class="btn-show-gallery flex-c-m fa fa-spoon" href="images/photo-gallery-15.jpg" data-lightbox="gallery"></a>
+					<a class="btn-show-gallery flex-c-m fa fa-spoon" href="images/photo-gallery07.jpg" data-lightbox="gallery"></a>
 				</div>
 				<div class="wrap-text-blo1 p-t-35">
 								<a href="#"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
-									Weight Loss
+									Special Needs C
 								</h4></a>
 
 								<p class="m-b-20">
@@ -90,7 +90,7 @@
 								</p>
 
 								<a href="#" class="txt4">
-									Learn More
+									See Details
 									<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
 								</a>
 							</div>
