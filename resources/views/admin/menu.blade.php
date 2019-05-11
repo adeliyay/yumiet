@@ -1,6 +1,7 @@
 @extends('layouts.admin')
 @section('content')
-
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
       <div class="content">
         <div class="container-fluid">
           <div class="row">
@@ -57,11 +58,15 @@
                                     <div class="form-group ">
                                       <label class="col-md-12">Image</label>
                                       <div class="col-md-12">
-                                   <input type="file"  class="form-control form-control-line" required>
+                                   <label class="col-md-4 control-label form-control form-control-line" for="filebutton">Select Image</label>
+                                  <div class="col-md-4">
+                                 <input id="filebutton" name="filebutton" class="input-file" type="file">
+                                  </div>
                                </div>
-                             </div>
+                             
+                             <!-- File Button --> 
   
-                                  <button type="submit" class="btn btn-success pull-right">Update Profile</button>
+                                  <button type="submit" class="btn btn-success pull-right">Update Menu</button>
                                 </form>
                             </div>
                         </div>

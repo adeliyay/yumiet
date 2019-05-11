@@ -56,6 +56,10 @@ Route::get('/menu-regular', function () {
     return view('menu.re');
 });
 
+Route::get('/history', function () {
+    return view('history');
+});
+
 
 Auth::routes();
 
