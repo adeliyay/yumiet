@@ -95,7 +95,7 @@
                   <th><strong>End</strong></th>
                   <td>28-09-2019</td>
                 </tr>
-              
+               
                     <th><a href="#" class="profile__contact-btn btn btn-lg  btn-info col-md-7" data-toggle="modal" data-target="#profile__contact-form">
                     Upload Invoice </a> </th>
                     <td></td>

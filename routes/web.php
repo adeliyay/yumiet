@@ -80,6 +80,10 @@ Route::group(['prefix'=> 'admin', 'middleware' => ['admin', 'auth']], function()
         return view('admin.menu');
     });
 
+    Route::get('/add-menu', function(){
+        return view('admin.add-menu');
+    });
+
 
     
 });
