@@ -56,13 +56,6 @@ Route::get('/menu-regular', function () {
     return view('menu.re');
 });
 
-Route::get('admin/tables', function(){
-        return view('admin.tables');
-    });
-
-Route::get('admin/menu', function(){
-        return view('admin.menu');
-    });
 
 Auth::routes();
 
@@ -74,6 +67,15 @@ Route::group(['prefix'=> 'admin', 'middleware' => ['admin', 'auth']], function()
     Route::get('/', function(){
         return view('admin.admin');
     });
+
+    Route::get('/tables', function(){
+        return view('admin.tables');
+    });
+
+    Route::get('/menu', function(){
+        return view('admin.menu');
+    });
+
 
     
 });

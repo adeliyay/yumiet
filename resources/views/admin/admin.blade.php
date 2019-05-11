@@ -6,6 +6,90 @@
         <div class="container-fluid">
     
           <div class="row">
+            
+            <div class="col-lg-6 col-md-12">
+              <div class="card">
+                <div class="card-header card-header-tabs card-header-primary">
+                  <div class="nav-tabs-navigation">
+                    <div class="nav-tabs-wrapper">
+                      <span class="nav-tabs-title">Category</span>
+                      <ul class="nav nav-tabs" data-tabs="tabs">
+                        
+                        <li class="nav-item">
+                          <a class="nav-link active" href="" data-toggle="tab">
+                            <i class="material-icons"></i> Add
+                            <div class="ripple-container"></div>
+                          </a>
+                        </li>
+              
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="tab-content">
+
+                    <div class="tab-pane active" id="profile">
+
+                      <table class="table">
+                        <tbody>
+                          <tr>
+                         
+                            <td>Regular</td>
+                            <td class="td-actions text-right">
+                              <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-link btn-sm">
+                                <i class="material-icons">edit</i>
+                              </button>
+                              <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-link btn-sm">
+                                <i class="material-icons">close</i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                           
+                            <td>Weight Loss</td>
+                            <td class="td-actions text-right">
+                              <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-link btn-sm">
+                                <i class="material-icons">edit</i>
+                              </button>
+                              <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-link btn-sm">
+                                <i class="material-icons">close</i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                           
+                            <td>Muscle Building </td>
+                            <td class="td-actions text-right">
+                              <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-link btn-sm">
+                                <i class="material-icons">edit</i>
+                              </button>
+                              <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-link btn-sm">
+                                <i class="material-icons">close</i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                           
+                            <td>Special Needs</td>
+                            <td class="td-actions text-right">
+                              <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-link btn-sm">
+                                <i class="material-icons">edit</i>
+                              </button>
+                              <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-link btn-sm">
+                                <i class="material-icons">close</i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div class="col-lg-6 col-md-12">
               <div class="card">
                 <div class="card-header card-header-tabs card-header-primary">
@@ -251,7 +335,7 @@
                 </div>
               </div>
             </div>
-            
+
               <div class="card">
                 <div class="card-header card-header-warning">
                   <h4 class="card-title">Employees Stats</h4>

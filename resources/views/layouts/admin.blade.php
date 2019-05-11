@@ -18,9 +18,9 @@
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="{{asset('assets/demo/demo.css')}}" rel="stylesheet" />
 <!--   <link href="{{ asset('css/app.css') }}" rel="stylesheet"> -->
-   <link href="assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
+   <link href="{{asset('assets/libs/chartist/dist/chartist.min.css')}}" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="dist/css/style.min.css" rel="stylesheet">
+    <link href="{{asset('assets/libs/css/style.css')}}" rel="stylesheet">
 </head>
 
 <body class="">
@@ -39,7 +39,7 @@
       <div class="sidebar-wrapper">
         <ul class="nav">
           <li class="nav-item active  ">
-            <a class="nav-link" href="./dashboard.html">
+            <a class="nav-link" href='{{url("admin")}}'>
               <i class="material-icons">dashboard</i>
               <p>Dashboard</p>
             </a>
@@ -56,7 +56,7 @@
               <p>Menu</p>
             </a>
           </li>
-          <li class="nav-item ">
+           <li class="nav-item ">
             <a class="nav-link" href="./icons.html">
               <i class="material-icons">bubble_chart</i>
               <p>Icons</p>
@@ -257,6 +257,10 @@
   </div>
   <!--   Core JS Files   -->
   <script src="{{asset('assets/js/core/jquery.min.js')}}"></script>
+
+  <script src="{{asset('assets/libs/jquery.min.js')}}"></script>
+  <script src="{{asset('assets/libs/custom.js')}}"></script>
+
   <script src="{{asset('assets/js/core/popper.min.js')}}"></script>
   <script src="{{asset('assets/js/core/bootstrap-material-design.min.js')}}"></script>
   <script src="{{asset('assets/js/plugins/perfect-scrollbar.jquery.min.js')}}"></script>
