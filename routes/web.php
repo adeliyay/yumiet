@@ -81,8 +81,8 @@ Route::group(['prefix'=> 'admin', 'middleware' => ['admin', 'auth']], function()
         return view('admin.admin');
     });
 
-    Route::get('/tables', function(){
-        return view('admin.tables');
+    Route::get('/order', function(){
+        return view('admin.order.index');
     });
 
     Route::get('/menu', function(){

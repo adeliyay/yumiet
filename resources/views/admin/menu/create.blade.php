@@ -22,7 +22,7 @@
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href='{{url("admin/tables")}}'>
+            <a class="nav-link" href='{{url("admin/order")}}'>
               <i class="material-icons">content_paste</i>
               <p>Table List</p>
             </a>
