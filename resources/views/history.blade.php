@@ -24,7 +24,9 @@
         <!-- User info -->
         <div class="panel panel-default">
           <div class="panel-heading">
-          <h4 class="panel-title">Accepted</h4>
+          <h4 class="panel-title"><span class="txt9">
+                  <h3>Accepted</h3>
+                </span></h4>
           </div>
           <div class="panel-body">
             <table class="table profile__table">
@@ -55,11 +57,11 @@
                 </tr>
                 <tr>
                   <th>
-                    <a href="#" class=" btn btn-lg btn-success col-md-4" data-toggle="modal" data-target="#profile__contact-form"> Received</a> 
-                    <a href="#" class="profile__contact-btn btn btn-lg  btn-danger col-md-4" data-toggle="modal" data-target="#profile__contact-form"> Not Received</a> 
+                    <a href="#" class=" btn btn-lg btn-success col-md-4" > Received</a> 
+                    <a href="#" class="profile__contact-btn btn btn-lg  btn-danger col-md-4" > Not Received</a> 
                     
                     </th>
-                    <td><a href="#" class="profile__contact-btn btn btn-lg  btn-info col-md-7" data-toggle="modal" data-target="#profile__contact-form">
+                    <td><a href='{{url("/review")}}' class=" btn btn-lg  btn-info col-md-7">
                     Add Review </a> </td>
                 </tr>
               </tbody>
@@ -70,7 +72,9 @@
         <!-- User info -->
         <div class="panel panel-default">
           <div class="panel-heading">
-          <h4 class="panel-title">Not Accepted</h4>
+          <h4 class="panel-title"><span class="txt9">
+                  <h3>In progress</h3>
+                </span></h4>
           </div>
           <div class="panel-body">
             <table class="table profile__table">
@@ -95,13 +99,15 @@
                   <th><strong>End</strong></th>
                   <td>28-09-2019</td>
                 </tr>
-               
-                    <th><a href="#" class="profile__contact-btn btn btn-lg  btn-info col-md-7" data-toggle="modal" data-target="#profile__contact-form">
-                    Upload Invoice </a> </th>
-                    <td></td>
-                </tr>
-              </tbody>
+               </tbody>
             </table>
+                    <form action="" method="post" enctype="multipart/form-data" id="js-upload-form">
+                <input type="file" name="files[]" id="js-upload-files" multiple>
+              <button type="submit" class="profile__contact-btn btn btn-lg btn-info col-md-3" id="js-upload-submit">Upload Invoice</button>
+            <!-- </div> -->
+          </form>
+                
+              
           </div>
         </div>
   
@@ -111,7 +117,7 @@
         
         <!-- Contact user -->
         <p>
-          <a href="#" class="profile__contact-btn btn btn-lg btn-block btn-info" data-toggle="modal" data-target="#profile__contact-form">
+          <a href="#" class="profile__contact-btn btn btn-lg btn-block btn-info" ">
             Contact Admin
           </a>
         </p>

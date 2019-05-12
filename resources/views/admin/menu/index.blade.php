@@ -21,7 +21,7 @@
       </div>
       <div class="sidebar-wrapper">
         <ul class="nav">
-          <li class="nav-item active  ">
+          <li class="nav-item   ">
             <a class="nav-link" href='{{url("admin")}}'>
               <i class="material-icons">dashboard</i>
               <p>Dashboard</p>

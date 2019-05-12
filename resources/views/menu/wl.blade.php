@@ -31,9 +31,7 @@
 			<div class="item-gallery isotope-item bo-rad-10 hov-img-zoom events guests">
 				<img src="images/photo-gallery07.jpg" alt="IMG-GALLERY">
 
-				<div class="overlay-item-gallery trans-0-4 flex-c-m">
-					<a class="btn-show-gallery flex-c-m fa fa-spoon" href="images/photo-gallery07.jpg" data-lightbox="gallery"></a>
-				</div>
+				
 					<div class="wrap-text-blo1 p-t-35">
 								<a href="#"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
 									Weight Loss A
@@ -54,9 +52,7 @@
 			<div class="item-gallery isotope-item bo-rad-10 hov-img-zoom food">
 				<img src="images/photo-gallery04.jpg" alt="IMG-GALLERY">
 
-				<div class="overlay-item-gallery trans-0-4 flex-c-m">
-					<a class="btn-show-gallery flex-c-m fa fa-spoon" href="images/photo-gallery04.jpg" data-lightbox="gallery"></a>
-				</div>
+				
 				<div class="wrap-text-blo1 p-t-35">
 								<a href="#"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
 									Weight Loss B
@@ -77,9 +73,7 @@
 			<div class="item-gallery isotope-item bo-rad-10 hov-img-zoom events">
 				<img src="images/photo-gallery09.jpg" alt="IMG-GALLERY">
 
-				<div class="overlay-item-gallery trans-0-4 flex-c-m">
-					<a class="btn-show-gallery flex-c-m fa fa-spoon" href="images/photo-gallery09.jpg" data-lightbox="gallery"></a>
-				</div>
+				
 				<div class="wrap-text-blo1 p-t-35">
 								<a href="#"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
 									Weight Loss C

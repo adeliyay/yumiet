@@ -31,11 +31,9 @@
 			<div class="item-gallery isotope-item bo-rad-10 hov-img-zoom events guests">
 				<img src="images/photo-gallery01.jpg" alt="IMG-GALLERY">
 
-				<div class="overlay-item-gallery trans-0-4 flex-c-m">
-					<a class="btn-show-gallery flex-c-m fa fa-spoon" href="images/photo-gallery01.jpg" data-lightbox="gallery"></a>
-				</div>
+				
 					<div class="wrap-text-blo1 p-t-35">
-								<a href="#"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
+								<a href='{{url("konfirmasi")}}'><h4 class="txt5 color0-hov trans-0-4 m-b-13">
 									Regular A
 								</h4></a>
 
@@ -43,7 +41,7 @@
 									Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.
 								</p>
 
-								<a href="#" class="txt4">
+								<a href='{{url("admin")}}' class="txt4">
 									See Details
 									<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
 								</a>
@@ -54,9 +52,7 @@
 			<div class="item-gallery isotope-item bo-rad-10 hov-img-zoom food">
 				<img src="images/photo-gallery02.jpg" alt="IMG-GALLERY">
 
-				<div class="overlay-item-gallery trans-0-4 flex-c-m">
-					<a class="btn-show-gallery flex-c-m fa fa-spoon" href="images/photo-gallery02.jpg" data-lightbox="gallery"></a>
-				</div>
+				
 				<div class="wrap-text-blo1 p-t-35">
 								<a href="#"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
 									Regular B
@@ -77,9 +73,7 @@
 			<div class="item-gallery isotope-item bo-rad-10 hov-img-zoom events">
 				<img src="images/photo-gallery03.jpg" alt="IMG-GALLERY">
 
-				<div class="overlay-item-gallery trans-0-4 flex-c-m">
-					<a class="btn-show-gallery flex-c-m fa fa-spoon" href="images/photo-gallery03.jpg" data-lightbox="gallery"></a>
-				</div>
+				
 				<div class="wrap-text-blo1 p-t-35">
 								<a href="#"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
 									Regular C

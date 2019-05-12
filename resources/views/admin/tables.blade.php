@@ -13,13 +13,13 @@
       </div>
       <div class="sidebar-wrapper">
         <ul class="nav">
-          <li class="nav-item active  ">
+          <li class="nav-item   ">
             <a class="nav-link" href='{{url("admin")}}'>
               <i class="material-icons">dashboard</i>
               <p>Dashboard</p>
             </a>
           </li>
-          <li class="nav-item ">
+          <li class="nav-item active ">
             <a class="nav-link" href='{{url("admin/tables")}}'>
               <i class="material-icons">content_paste</i>
               <p>Table List</p>
