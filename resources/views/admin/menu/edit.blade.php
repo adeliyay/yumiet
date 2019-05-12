@@ -46,30 +46,33 @@
                   <h4 class="card-title">Add Menu</h4>
                 </div>
                 <div class="card-body">
-                  <form>
+                  <form enctype="multipart/form-data" method="POST" action="{{ route('menu.update', $menu->id) }}">
+                  @csrf
+                  @method('PUT')
                     <div class="row">
                       <!-- Column -->
                     <div class=" col-md-12">
                         <div class="card">
                             <div class="card-body">
-                                <form class="form-horizontal form-material" enctype="multipart/form-data">
+                                <form class="form-horizontal form-material" >
+                                  
                                     <div class="form-group">
                                         <label class="col-md-12">Name</label>
                                         <div class="col-md-12">
-                                            <input type="text"  class="form-control form-control-line">
+                                            <input type="text"  class="form-control form-control-line" name="name" required="required" value="{{ $menu->name }}">
                                         </div>
                                     </div>
                                      <div class="form-group">
                                         <label class="col-md-12">Package</label>
                                         <div class="col-md-12">
-                                            <input type="text"  class="form-control form-control-line">
+                                            <input type="text"  class="form-control form-control-line" name="package" required="required" value="{{ $menu->package }}">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                       <div class="ml-auto">
                                         <label class="col-sm-12">Select Goals</label>
                                         <div class="col-sm-12 dropdown dl">
-                                            <select class="custom-select col-md-5 form-control-line">
+                                            <select class="custom-select col-md-5 form-control-line" name="goals" required="required" value="{{ $menu->goals }}">
                                                 <option>Regular</option>
                                                 <option>Weight Loss</option>
                                                 <option>Special Needs</option>
@@ -81,29 +84,28 @@
                                     <div class="form-group">
                                         <label class="col-md-12">Price</label>
                                         <div class="col-md-12">
-                                            <input type="number" min="0" class="form-control form-control-line">
+                                            <input type="number" min="0" class="form-control form-control-line" name="price" required="required" value="{{ $menu->price }}">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label class="col-md-12">Description</label>
                                         <div class="col-md-12">
-                                            <textarea rows="5" class="form-control form-control-line"></textarea>
+                                            <textarea rows="5" class="form-control form-control-line" name="description" value="{{ $menu->description }}"></textarea>
                                         </div>
                                     </div>
                                     
-                                    <div class="form-group ">
-                                      <label class="col-md-12">Image</label>
-                                      <div class="col-md-12">
-                                   <label class="col-md-4 control-label form-control form-control-line" for="filebutton">Select Image</label>
-                                  <div class="col-md-4">
-                                 <input id="filebutton" name="filebutton" class="input-file" type="file">
-                                  </div>
-                               </div>
+                                    <div class="row">
+                        <div class="col-md-12">
+                            <label class="control-label">Image</label>
+                              <input type="file" name="image">
+                            </div>
+                        </div>
+                    </div>
                                   </div>
                              
                              <!-- File Button --> 
-  
-                                  <button type="submit" class="btn btn-success pull-right">Update Menu</button>
+                             <a href="{{ route('menu.index') }}" class="btn btn-danger">Back</a>
+                                  <button type="submit" class="btn btn-success pull">Save</button>
                                 </form>
                             </div>
                         </div>

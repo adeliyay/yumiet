@@ -20,7 +20,7 @@ class CreateMenusTable extends Migration
             $table->string('goals');
             $table->integer('price');
             $table->text('description');
-            $table->string('image');
+            $table->string('image')->default('default.png');
             $table->timestamps();
         });
     }

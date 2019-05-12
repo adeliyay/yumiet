@@ -1,4 +1,10 @@
 @extends('layouts.admin')
+
+@section('title','Menu')
+
+@push('css')
+    
+@endpush 
 @section('content')
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
@@ -28,7 +34,7 @@
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href='{{url("admin/menu")}}'>
+            <a class="nav-link" href='{{url("admin/menu")}}' >
               <i class="material-icons">library_books</i>
               <p>Menu</p>
             </a>
@@ -44,7 +50,7 @@
               <div class="card">
                 <div class="card-header card-header-primary">
                   <h4 class="card-title d-md-flex align-items-center ">Order</h4>
-                  <a href='{{url("admin/add-menu")}}' class="btn btn-info text-white pull-right">Add Menu</a>
+                  <a href='{{url("admin/menu/create")}}' class="btn btn-info text-white pull-right">Add Menu</a>
                 </div>
                 <div class="card-body">
                   <div class="table-responsive">
@@ -68,38 +74,38 @@
                           Description
                         </th>
                         <th>
+                          Image
+                        </th>
+                        <th>
                           Action
                         </th>
                       </thead>
                       <tbody>
-                        <tr>
-                          <td>
-                            1
-                          </td>
-                          <td>
-                            Dakota Rice
-                          </td>
-                          <td>
-                            Niger
-                          </td>
-                          <td>
-                            Oud-Turnhout
-                          </td>
-                          <td class="text-primary">
-                            $36,738
-                        </td>
-                          <td><a class="btn btn-info text-white">Detail</a> </td>
-                          <td class="td-actions">
-                              <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-link">
-                                <i class="material-icons">edit</i>
-                              </button>
-                              <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-link">
-                                <i class="material-icons">close</i>
-                              </button>
-                            </td>
-                        </tr>
-                        
-                        
+                      @foreach($menus as $key=>$menu)
+                      <tr>
+                                <td>{{ $key + 1 }}</td>
+                                <td>{{ $menu->name }}</td>
+                                <td>{{ $menu->package }}</td>
+                                <td>{{ $menu->goals }}</td>
+                                <td>{{ $menu->price }}</td>
+                                <td>{{ $menu->description }}</td>
+                                <td>{{ $menu->image }}</td>
+                      </tr>
+                      <td>
+                                <a href="{{ route('menu.edit',$menu->id) }}" class="btn-info btn-sm"><i class="material-icons">mode_edit</i></a>
+
+                                  <form id="delete-form-{{ $menu->id }}" action="{{ route('menu.destroy',$menu->id) }}" style="display: none;" method="POST">
+                                  @csrf
+                                  @method('DELETE')
+                                  </form>
+                                <button type="button" class="btn btn-danger btn-sm" onclick="if(confirm('Are you sure? You want to delete this?')){
+                                  event.preventDefault();
+                                  document.getElementById('delete-form-{{ $menu->id }}').submit();
+                                }else {
+                                  event.preventDefault();
+                                }"><i class="material-icons">delete</i></button>
+                              </td>
+                      @endforeach
                       </tbody>
                     </table>
                   </div>
