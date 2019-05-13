@@ -28,69 +28,31 @@
 
 		<div class="wrap-gallery isotope-grid flex-w p-l-25 p-r-25">
 			<!-- - -->
+			@foreach($menus as $key=>$menu)
+			@if($menu->goals=="Weight Loss")
 			<div class="item-gallery isotope-item bo-rad-10 hov-img-zoom events guests">
-				<img src="images/photo-gallery07.jpg" alt="IMG-GALLERY">
+				<img src="{{ asset('uploads/menu/'.$menu->image) }}" alt="IMG-GALLERY">
 
 				
 					<div class="wrap-text-blo1 p-t-35">
 								<a href="#"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
-									Weight Loss A
+								{{ $menu->name }}
 								</h4></a>
 
 								<p class="m-b-20">
-									Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.
+								{{ $menu->description }}
 								</p>
-
+								<p class="txt18">
+								Rp. {{ $menu->price }}
+							</p>
 								<a href="#" class="txt4">
 									See Details
 									<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
 								</a>
 							</div>
 			</div>
-
-			<!-- - -->
-			<div class="item-gallery isotope-item bo-rad-10 hov-img-zoom food">
-				<img src="images/photo-gallery04.jpg" alt="IMG-GALLERY">
-
-				
-				<div class="wrap-text-blo1 p-t-35">
-								<a href="#"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
-									Weight Loss B
-								</h4></a>
-
-								<p class="m-b-20">
-									Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.
-								</p>
-
-								<a href="#" class="txt4">
-									See Details
-									<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
-								</a>
-							</div>
-			</div>
-
-			<!-- - -->
-			<div class="item-gallery isotope-item bo-rad-10 hov-img-zoom events">
-				<img src="images/photo-gallery09.jpg" alt="IMG-GALLERY">
-
-				
-				<div class="wrap-text-blo1 p-t-35">
-								<a href="#"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
-									Weight Loss C
-								</h4></a>
-
-								<p class="m-b-20">
-									Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.
-								</p>
-
-								<a href="#" class="txt4">
-									See Details
-									<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
-								</a>
-							</div>
-			</div>
-
-		
+			@endif
+			@endforeach	
 		</div>
 
 		<div class="pagination flex-c-m flex-w p-l-15 p-r-15 m-t-24 m-b-50">
