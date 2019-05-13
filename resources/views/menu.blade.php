@@ -34,7 +34,7 @@
 								{{ $menu->description }}
 							</span>
 
-							<span class="txt18">
+							<span class="txt25">
 								Rp. {{ $menu->price }}
 							</span>
 						</div>
@@ -76,7 +76,7 @@
 								{{ $menu->description }}
 							</span>
 
-							<span class="txt18">
+							<span class="txt25">
 								Rp. {{ $menu->price }}
 							</span>
 						</div>
@@ -118,7 +118,7 @@
 								{{ $menu->description }}
 							</span>
 
-							<span class="txt18">
+							<span class="txt25">
 								Rp. {{ $menu->price }}
 							</span>
 						</div>
@@ -161,7 +161,7 @@
 								{{ $menu->description }}
 							</span>
 
-							<span class="txt18">
+							<span class="txt25">
 								Rp. {{ $menu->price }}
 							</span>
 						</div>
