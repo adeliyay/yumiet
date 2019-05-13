@@ -33,7 +33,7 @@
               <p>Table List</p>
             </a>
           </li>
-          <li class="nav-item ">
+          <li class="nav-item active">
             <a class="nav-link" href='{{url("admin/menu")}}' >
               <i class="material-icons">library_books</i>
               <p>Menu</p>
@@ -49,7 +49,7 @@
             <div class="col-md-12">
               <div class="card">
                 <div class="card-header card-header-primary">
-                  <h4 class="card-title d-md-flex align-items-center ">Order</h4>
+                  <h4 class="card-title d-md-flex align-items-center ">Menu</h4>
                   <a href='{{url("admin/menu/create")}}' class="btn btn-info text-white pull-right">Add Menu</a>
                 </div>
                 <div class="card-body">
@@ -90,10 +90,8 @@
                                 <td>{{ $menu->price }}</td>
                                 <td>{{ $menu->description }}</td>
                                 <td>{{ $menu->image }}</td>
-                      </tr>
                       <td>
                                 <a href="{{ route('menu.edit',$menu->id) }}" class="btn-info btn-sm"><i class="material-icons">mode_edit</i></a>
-
                                   <form id="delete-form-{{ $menu->id }}" action="{{ route('menu.destroy',$menu->id) }}" style="display: none;" method="POST">
                                   @csrf
                                   @method('DELETE')
@@ -105,6 +103,7 @@
                                   event.preventDefault();
                                 }"><i class="material-icons">delete</i></button>
                               </td>
+                      </tr>
                       @endforeach
                       </tbody>
                     </table>
@@ -112,9 +111,4 @@
                 </div>
               </div>
             </div>
-            
-
-
-        
-
        @endsection
