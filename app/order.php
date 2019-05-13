@@ -10,4 +10,7 @@ class order extends Model
 	{
 		return $this->hasMany('App\Transaction');
 	}
+	public function user(){
+		return $this->belongsTo(User::class, 'user_id');
+   }
 }

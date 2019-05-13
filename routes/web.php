@@ -80,10 +80,7 @@ Route::group(['prefix'=> 'admin', 'middleware' => ['admin', 'auth']], function()
     Route::get('/', function(){
         return view('admin.admin');
     });
-
-    Route::get('/order', function(){
-        return view('admin.order.index');
-    });
+    Route::get('/order', 'ordercontroller@admin')->name('admin.order.index');
 
     Route::get('/menu', function(){
         return view('admin.menu');

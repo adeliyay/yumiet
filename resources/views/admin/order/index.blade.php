@@ -77,7 +77,19 @@
                           Action
                         </th>
                       </thead>
-                     
+                     <tbody>
+                     @foreach($orders as $key=>$order)
+                      <tr>
+                                <td>{{ $key + 1 }}</td>
+                                <td>{{ $order->user->name }}</td>
+                                <td>{{ $order->goals }}</td>
+                                <td>{{ $order->time }}</td>
+                                <td>{{ $order->start }}</td>
+                                <td>{{ $order->days }}</td>
+                                <td>{{ $order->gender }}</td>
+                      </tr>
+                      @endforeach
+                     </tbody>
                     </table>
                   </div>
                 </div>

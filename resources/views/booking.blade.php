@@ -94,15 +94,28 @@
 									</select>
 								</div>
 
-								<!-- End -->
+								<!-- Gender -->
 								<span class="txt9">
+									Days
+								</span>
+
+								<div class="wrap-inputtime size12 bo2 bo-rad-10 m-t-3 m-b-23">
+									<!-- Select2 -->
+									<select class="selection-1" name="days" required="required">
+										<option>5</option>
+										<option>10</option>
+										
+									</select>
+								</div>
+								<!-- End -->
+								<!-- <span class="txt9">
 									End
 								</span>
 
 								<div class="wrap-inputdate pos-relative txt10 size12 bo2 bo-rad-10 m-t-3 m-b-23">
 									<input class="my-calendar bo-rad-10 sizefull txt10 p-l-20" type="text" name="end" required="required">
 									<i class="btn-calendar fa fa-calendar ab-r-m hov-pointer m-r-18" aria-hidden="true"></i>
-								</div>
+								</div>-->
 
 								<!-- Phone -->
 								<span class="txt9">
