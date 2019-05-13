@@ -93,9 +93,9 @@
                                         </div>
                                     </div>
                                     
-                                    <div class="row">
+                      <div class="row">
                         <div class="col-md-12">
-                            <label class="control-label">Image</label>
+                            <label class="control-label">Image</label><br>
                               <input type="file" name="image">
                             </div>
                         </div>
@@ -103,8 +103,8 @@
                                   </div>
                              
                              <!-- File Button --> 
+                             <button type="submit" class="btn btn-success pull-right">Save</button>
                              <a href="{{ route('menu.index') }}" class="btn btn-danger pull-right">Back</a>
-                                  <button type="submit" class="btn btn-success pull-right">Save</button>
                                 </form>
                             </div>
                         </div>

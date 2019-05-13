@@ -31,7 +31,7 @@ Route::get('/menu', function () {
     return view('menu');
 });
 
-Route::get('/booking', function () {
+Route::get('/order', function () {
     return view('booking');
 
 });
@@ -74,6 +74,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/menu', 'ordercontroller@ordered')->name('order.ordered');
+Route::get('/menu', 'GoalsController@index')->name('menu');
 
 Route::group(['prefix'=> 'admin', 'middleware' => ['admin', 'auth']], function(){
 
@@ -90,9 +91,4 @@ Route::group(['prefix'=> 'admin', 'middleware' => ['admin', 'auth']], function()
     });
 
     Route::resource('menu','MenuController');
-    
-
-
-
-    
 });

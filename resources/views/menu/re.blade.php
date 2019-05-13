@@ -47,7 +47,6 @@
 								</a>
 							</div>
 			</div>
-
 			<!-- - -->
 			<div class="item-gallery isotope-item bo-rad-10 hov-img-zoom food">
 				<img src="images/photo-gallery02.jpg" alt="IMG-GALLERY">

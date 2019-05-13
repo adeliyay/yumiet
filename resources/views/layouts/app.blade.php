@@ -79,7 +79,7 @@
                         @else
                         	<ul class="main_menu">
                            <li>
-									<a href='{{url("/booking")}}'>Order</a>
+									<a href='{{url("/order")}}'>Order</a>
 								</li>
                         </ul>
                         @endguest
@@ -148,7 +148,7 @@
 
 
 			<li class="t-center m-b-13">
-				<a href='{{url("/booking")}}'>Order</a>
+				<a href='{{url("/order")}}'>Order</a>
 			</li>
 				
 			<li class="t-center m-b-13">
