@@ -15,7 +15,7 @@
       </div>
       <div class="sidebar-wrapper">
         <ul class="nav">
-          <li class="nav-item active  ">
+          <li class="nav-item   ">
             <a class="nav-link" href='{{url("admin")}}'>
               <i class="material-icons">dashboard</i>
               <p>Dashboard</p>
@@ -27,7 +27,7 @@
               <p>Table List</p>
             </a>
           </li>
-          <li class="nav-item ">
+          <li class="nav-item active">
             <a class="nav-link" href='{{url("admin/menu")}}'>
               <i class="material-icons">library_books</i>
               <p>Menu</p>
@@ -103,8 +103,8 @@
                                   </div>
                              
                              <!-- File Button --> 
-                             <a href="{{ route('menu.index') }}" class="btn btn-danger">Back</a>
-                                  <button type="submit" class="btn btn-success pull">Save</button>
+                             <a href="{{ route('menu.index') }}" class="btn btn-danger pull-right">Back</a>
+                                  <button type="submit" class="btn btn-success pull-right">Save</button>
                                 </form>
                             </div>
                         </div>

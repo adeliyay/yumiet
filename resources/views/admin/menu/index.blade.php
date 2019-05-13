@@ -89,7 +89,7 @@
                                 <td>{{ $menu->goals }}</td>
                                 <td>{{ $menu->price }}</td>
                                 <td>{{ $menu->description }}</td>
-                                <td>{{ $menu->image }}</td>
+                                <td><img class="img-responsive img-thumbnail" src="{{ asset('uploads/menu/'.$menu->image) }}" style="height: 100px; width: 100px" alt=""></td>
                       <td>
                                 <a href="{{ route('menu.edit',$menu->id) }}" class="btn-info btn-sm"><i class="material-icons">mode_edit</i></a>
                                   <form id="delete-form-{{ $menu->id }}" action="{{ route('menu.destroy',$menu->id) }}" style="display: none;" method="POST">
