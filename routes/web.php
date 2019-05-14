@@ -72,7 +72,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/menu', 'ordercontroller@ordered')->name('order.ordered');
 Route::get('/menu', 'GoalsController@index')->name('menu');
-Route::get('/menu', 'Menu2Controller@index')->name('menuwl');
+
 
 
 Route::group(['prefix'=> 'admin', 'middleware' => ['admin', 'auth']], function(){

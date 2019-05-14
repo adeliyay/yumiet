@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\order;
+use App\User;
+use App\Menu;
+use App\Http\Controllers\Auth;
+use App\Http\Controllers\ReController;
 use Illuminate\Http\Request;
 
 class ordercontroller extends Controller
@@ -27,16 +31,20 @@ class ordercontroller extends Controller
         $order->address = $request->address;
         $order->save();
         if($order->goals=="Regular"){
-            return view('menu.re');
+            $menus = menu::all();
+            return view('menu.re', compact('menus'));
         }
         elseif($order->goals=="Weight Loss"){
-            return view('menu.wl');
+            $menus = menu::all();
+            return view('menu.wl', compact('menus'));
         }
         elseif($order->goals=="Muscle Building"){
-            return view('menu.mb');
+            $menus = menu::all();
+            return view('menu.mb', compact('menus'));
         }
         elseif($order->goals=="Special Needs"){
-            return view('menu.sn');
+            $menus = menu::all();
+            return view('menu.sn', compact('menus'));
         }
     }
 }

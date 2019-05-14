@@ -56,45 +56,7 @@
 			</div>
 
 			<!-- - -->
-			<div class="item-gallery isotope-item bo-rad-10 hov-img-zoom food">
-				<img src="images/photo-gallery05.jpg" alt="IMG-GALLERY">
-
-				
-				<div class="wrap-text-blo1 p-t-35">
-								<a href="#"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
-									Special Needs B
-								</h4></a>
-
-								<p class="m-b-20">
-									Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.
-								</p>
-
-								<a href="#" class="txt4">
-									See Details
-									<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
-								</a>
-							</div>
-			</div>
-
-			<!-- - -->
-			<div class="item-gallery isotope-item bo-rad-10 hov-img-zoom events">
-				<img src="images/photo-gallery07.jpg" alt="IMG-GALLERY">
-
-				<div class="wrap-text-blo1 p-t-35">
-								<a href="#"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
-									Special Needs C
-								</h4></a>
-
-								<p class="m-b-20">
-									Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.
-								</p>
-
-								<a href="#" class="txt4">
-									See Details
-									<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
-								</a>
-							</div>
-			</div>
+			
 
 		
 		</div>

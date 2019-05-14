@@ -3,9 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\menu;
 
-class SnController extends Controller
+class TransactionController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +13,7 @@ class SnController extends Controller
      */
     public function index()
     {
-        $menus = menu::all();
-        return view('menu.sn', compact('menus'));
+        //
     }
 
     /**
