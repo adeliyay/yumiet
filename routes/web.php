@@ -65,6 +65,10 @@ Route::get('/review', function () {
     return view('review');
 });
 
+Route::get('/detail', function () {
+    return view('menu.detail');
+});
+
 
 
 Auth::routes();
