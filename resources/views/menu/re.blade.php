@@ -39,13 +39,13 @@
 								{{ $menu->name }}
 								</h4></a>
 
-								<p class="m-b-20">
+								<p class="txt23">
 								{{ $menu->description }}
 								</p>
-								<p class="txt18">
+								<p class="txt25">
 								Rp. {{ $menu->price }}
 							</p>
-								<a href="#" class="txt4">
+								<a href="#" class="txt4 pull-right">
 									See Details
 									<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
 								</a>

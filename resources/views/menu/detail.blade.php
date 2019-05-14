@@ -79,7 +79,8 @@
                 </div>
           </div>
           <div class="pull-right">
-          <button type="button" class="btn btn-success btn-lg col-md-3 pull-right ">Choose Menu</button>
+          <button type="button" class="btn btn-success btn-lg col-sm-2 pull-right ">Choose Menu</button>
+          <button type="button" class="btn btn-danger btn-lg col-sm-2 pull-right ">Back</button>
       </div>
         </div>
         </div>
