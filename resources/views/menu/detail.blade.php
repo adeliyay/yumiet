@@ -29,6 +29,7 @@
                 </span>
     </div>
 </div>
+        <div class="center isotope-item bo-rad-10 hov-img-zoom events guests">
         <div class="list-group">
           <div class="list-group-item">
                 <div class="media col-md-3">
@@ -46,6 +47,7 @@
                     <h3> Rp  10000 </h3>
                 </div>
           </div>
+      </div>
           <div class="list-group-item">
                 <div class="media col-md-3">
                     <figure class="pull-left">
