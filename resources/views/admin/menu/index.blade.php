@@ -85,8 +85,8 @@
                       <tr>
                                 <td>{{ $key + 1 }}</td>
                                 <td>{{ $menu->name }}</td>
-                                <td>{{ $menu->package }}</td>
                                 <td>{{ $menu->goals }}</td>
+                                <td>{{ $menu->package }}</td>
                                 <td>{{ $menu->price }}</td>
                                 <td>{{ $menu->description }}</td>
                                 <td><img class="img-responsive img-thumbnail" src="{{ asset('uploads/menu/'.$menu->image) }}" style="height: 100px; width: 100px" alt=""></td>

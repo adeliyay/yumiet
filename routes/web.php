@@ -90,5 +90,9 @@ Route::group(['prefix'=> 'admin', 'middleware' => ['admin', 'auth']], function()
         return view('admin.menu');
     });
 
+    Route::get('/detail', function(){
+        return view('admin.order.detail');
+    });
+
     Route::resource('menu','MenuController');
 });
