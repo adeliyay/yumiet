@@ -66,7 +66,7 @@ Route::get('/review', function () {
 });
 
 Route::get('/detail', function () {
-    return view('menu.detail');
+    return view('menu.details');
 });
 
 

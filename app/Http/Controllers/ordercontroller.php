@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\order;
 use App\User;
 use App\Menu;
+use App\package;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\ReController;
 use Illuminate\Http\Request;
@@ -33,7 +34,8 @@ class ordercontroller extends Controller
         $order->save();
         if($order->goals=="Regular"){
             $menus = menu::all();
-            return view('menu.re', compact('menus'));
+            $packages = package::all();
+            return view('menu.re', compact('menus','packages'));
         }
         elseif($order->goals=="Weight Loss"){
             $menus = menu::all();
