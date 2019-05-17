@@ -13,6 +13,6 @@ class Transaction extends Model
 
     public function order()
     {
-    	return $this->belongsTo('App\order');
+    	return $this->belongsTo('App\order', 'order_id');
     }
 }

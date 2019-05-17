@@ -35,7 +35,7 @@ class ordercontroller extends Controller
         if($order->goals=="Regular"){
             $menus = menu::all();
             $packages = package::all();
-            return view('menu.re', compact('menus','packages'));
+            return view('menu.re', compact('menus','packages','order'));
         }
         elseif($order->goals=="Weight Loss"){
             $menus = menu::all();

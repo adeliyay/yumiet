@@ -75,6 +75,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/menu', 'ordercontroller@ordered')->name('order.ordered');
+Route::post('/konfirmasi', 'TransactionController@chooseorder')->name('Transaction.chooseorder');
 Route::get('/menu', 'GoalsController@index')->name('menu');
 
 

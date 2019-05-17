@@ -16,14 +16,11 @@ class CreateTransactionsTable extends Migration
         Schema::create('transactions', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('order_id')->unsigned();
-            $table->integer('menu_id')->unsigned();
-            $table->boolean('is_verified');
-            $table->string('payment');
-            $table->boolean('status');
+            $table->integer('package');
+            $table->boolean('is_verified')->default('0');
+            $table->boolean('status')->default('0');
             $table->foreign('order_id')
                 ->references('id')->on('orders');
-            $table->foreign('menu_id')
-                ->references('id')->on('menus');
             $table->timestamps();
         });
     }
