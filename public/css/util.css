@@ -3418,6 +3418,8 @@ SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE
 	width: 143px;
 	height: 60px;
 }
+	height: 60px;
+}
 
 .size8 {
 	width: 190px;
@@ -3426,8 +3428,6 @@ SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE
 
 .size9 {
 	width: 173px;
-	height: 60px;
-}
 
 .size10 {
 	width: 50px;
@@ -3557,6 +3557,15 @@ SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE
 
 .size38 {
 	max-width: 190px;
+}
+.size39 {
+	width: 100px;
+	height: 100px;
+}
+
+.size40 {
+	width: 600px;
+	height: 100px;
 }
 
 /*[ Background Color ]

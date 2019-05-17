@@ -39,15 +39,18 @@ class ordercontroller extends Controller
         }
         elseif($order->goals=="Weight Loss"){
             $menus = menu::all();
-            return view('menu.wl', compact('menus'));
+            $packages = package::all();
+            return view('menu.wl', compact('menus','packages','order'));
         }
         elseif($order->goals=="Muscle Building"){
             $menus = menu::all();
-            return view('menu.mb', compact('menus'));
+            $packages = package::all();
+            return view('menu.mb', compact('menus','packages','order'));
         }
         elseif($order->goals=="Special Needs"){
             $menus = menu::all();
-            return view('menu.sn', compact('menus'));
+            $packages = package::all();
+            return view('menu.sn', compact('menus','packages','order'));
         }
     }
     public function admin (){
