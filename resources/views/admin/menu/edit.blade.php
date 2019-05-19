@@ -43,7 +43,7 @@
             <div class="col-md-8">
               <div class="card">
                 <div class="card-header card-header-primary">
-                  <h4 class="card-title">Add Menu</h4>
+                  <h4 class="card-title">Edit Menu</h4>
                 </div>
                 <div class="card-body">
                   <form enctype="multipart/form-data" method="POST" action="{{ route('menu.update', $menu->id) }}">

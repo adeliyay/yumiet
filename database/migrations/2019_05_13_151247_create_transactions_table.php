@@ -15,9 +15,9 @@ class CreateTransactionsTable extends Migration
     {
         Schema::create('transactions', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('order_id')->unsigned();
-            $table->integer('package');
+            $table->integer('order_id')->unique();
             $table->boolean('is_verified')->default('0');
+            $table->string('payment')->nullable();
             $table->boolean('status')->default('0');
             $table->foreign('order_id')
                 ->references('id')->on('orders');

@@ -17,6 +17,7 @@ class CreateOrdersTable extends Migration
             $table->increments('id');
             $table->integer('user_id');
             $table->string('goals');
+            $table->string('package');
             $table->string('time');
             $table->string('start');
             $table->string('days');

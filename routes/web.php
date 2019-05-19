@@ -74,10 +74,9 @@ Route::get('/detail', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::post('/menu', 'ordercontroller@ordered')->name('order.ordered');
-Route::post('/konfirmasi', 'TransactionController@chooseorder')->name('Transaction.chooseorder');
-Route::get('/menu', 'GoalsController@index')->name('menu');
-
+Route::post('/menu', 'ordercontroller@order')->name('order.order');
+Route::post('/konfirmasi', 'ordercontroller@saveorder')->name('order.saveorder');
+Route::post('/history', 'ordercontroller@ordered')->name('order.ordered');
 
 
 Route::group(['prefix'=> 'admin', 'middleware' => ['admin', 'auth']], function(){

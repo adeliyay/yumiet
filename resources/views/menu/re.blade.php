@@ -6,7 +6,7 @@
 	<!-- Title Page -->
 	<section class="bg-title-page flex-c-m p-t-160 p-b-80 p-l-15 p-r-15" style="background-image: url(images/bg-title-page-02.jpg);">
 		<h2 class="tit6 t-center">
-			Detail
+		Regular
 		</h2>
 		
 	</section>
@@ -21,7 +21,7 @@
 			</button> -->
 			@foreach($packages as $key=>$package)
 			<button class="label-gallery txt26 trans-0-4" data-filter=".{{$package->package}}">
-				Regular {{$package->package}}
+				Package {{$package->package}}
 			</button>
 		@endforeach
 		</div>
@@ -75,13 +75,18 @@
 
 	<!-- Sign up -->
 	<div class="section-signup bg1-pattern p-t-85 p-b-85">
-		<form class="flex-c-m flex-w flex-col-c-m-lg p-l-5 p-r-5" method="post" action="{{ route('Transaction.chooseorder') }}">
+		<form class="flex-c-m flex-w flex-col-c-m-lg p-l-5 p-r-5" method="post" action="{{ route('order.saveorder') }}">
 		{{ csrf_field() }}
 			<span class="txt5 m-10">
-				Choose Menu 
+				Choose Package 
 			</span>
-			<input name="orderId" type="hidden" value="{{$order->id}}">
-			<input name="goals" type="hidden" value="{{$order->goals}}">
+			<input name="goals" type="hidden" value="{{$order['goals']}}">
+			<input name="start" type="hidden" value="{{$order['start']}}">
+			<input name="days" type="hidden" value="{{$order['days']}}">
+			<input name="time" type="hidden" value="{{$order['time']}}">
+			<input name="gender" type="hidden" value="{{$order['gender']}}">
+			<input name="address" type="hidden" value="{{$order['address']}}">
+			<input name="phone" type="hidden" value="{{$order['phone']}}">
 			
 			<select class="wrap-input-signup size17 bo2 bo-rad-10 bgwhite pos-relative txt10 m-10" name="package" required="required">
 			@foreach($packages as $key=>$package)

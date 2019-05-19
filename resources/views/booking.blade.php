@@ -28,7 +28,7 @@
 						</h3>
 					</div>
 
-					<form class="wrap-form-booking" method="post" action="{{ route('order.ordered') }}">
+					<form class="wrap-form-booking" method="post" action="{{ route('order.order') }}">
 						@csrf
 
 						<div class="row">
