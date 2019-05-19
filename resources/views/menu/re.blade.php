@@ -8,10 +8,7 @@
 		<h2 class="tit6 t-center">
 			Regular
 		</h2>
-		
 	</section>
-
-
 
 	<!-- Gallery -->
 	<div class="section-gallery p-t-118 p-b-100">

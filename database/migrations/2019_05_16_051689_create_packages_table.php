@@ -16,6 +16,7 @@ class CreatePackagesTable extends Migration
         Schema::create('packages', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('package');
+            $table->integer('total_price');
             $table->timestamps();
         });
     }
