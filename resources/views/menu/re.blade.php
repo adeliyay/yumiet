@@ -6,12 +6,13 @@
 	<!-- Title Page -->
 	<section class="bg-title-page flex-c-m p-t-160 p-b-80 p-l-15 p-r-15" style="background-image: url(images/bg-title-page-02.jpg);">
 		<h2 class="tit6 t-center">
+<<<<<<< HEAD
 		Regular
+=======
+			Regular
+>>>>>>> bb2e19215c32821c75d65d192cced0e344574534
 		</h2>
-		
 	</section>
-
-
 
 	<!-- Gallery -->
 	<div class="section-gallery p-t-118 p-b-100">
@@ -33,7 +34,7 @@
 			<div class=" isotope-item bo-rad-10 hov-img-zoom {{$menu->package}}">
 			
 				<div class="list-group">
-          	<div class="list-group-item  ">
+          	<div class="list-group-item row">
 			  <table>
 			  <tr>
 			  <td
@@ -44,13 +45,13 @@
 			<tr>
 			<td class="size30">
 				<div class="col-md-12">
-			 	<img src="images/photo-gallery-14.jpg" alt="placehold.it/350x250" >  
+			 	<img src="{{ asset('uploads/menu/'.$menu->image) }}"  alt="placehold.it/350x250" >  
             	</div>
             </td>
         	<td>
-                <div class="col-sm-12">
+                <div class="col-sm-15 ">
 					<h4 class="txt5">{{ $menu->name }}</h4>
-					<h4>Rp. {{ $menu->price }} </h4>
+					<h4 class="txt25">Rp. {{ $menu->price }} </h4>
                     <p class="txt23"> {{ $menu->description }}
                     </p>
                 </div>
@@ -66,11 +67,7 @@
        
       <br>
 		
-		<div class="pagination flex-c-m flex-w p-l-15 p-r-15 m-t-24 m-b-50">
-			<a href="#" class="item-pagination flex-c-m trans-0-4 active-pagination">1</a>
-			<a href="#" class="item-pagination flex-c-m trans-0-4">2</a>
-			<a href="#" class="item-pagination flex-c-m trans-0-4">3</a>
-		</div>
+		
 	</div>
 
 	<!-- Sign up -->

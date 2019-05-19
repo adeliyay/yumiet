@@ -21,7 +21,11 @@
 			</button> -->
 			@foreach($packages as $key=>$package)
 			<button class="label-gallery txt26 trans-0-4" data-filter=".{{$package->package}}">
+<<<<<<< HEAD
 				Package {{$package->package}}
+=======
+				Muscle Building {{$package->package}}
+>>>>>>> bb2e19215c32821c75d65d192cced0e344574534
 			</button>
 		@endforeach
 		</div>
@@ -33,7 +37,11 @@
 			<div class=" isotope-item bo-rad-10 hov-img-zoom {{$menu->package}}">
 			
 				<div class="list-group">
+<<<<<<< HEAD
           	<div class="list-group-item  ">
+=======
+          	<div class="list-group-item row ">
+>>>>>>> bb2e19215c32821c75d65d192cced0e344574534
 			  <table>
 			  <tr>
 			  <td
@@ -44,6 +52,7 @@
 			<tr>
 			<td class="size30">
 				<div class="col-md-12">
+<<<<<<< HEAD
 			 	<img src="images/photo-gallery-14.jpg" alt="placehold.it/350x250" >  
             	</div>
             </td>
@@ -51,6 +60,15 @@
                 <div class="col-sm-12">
 					<h4 class="txt5">{{ $menu->name }}</h4>
 					<h4>Rp. {{ $menu->price }} </h4>
+=======
+			 	<img src="{{ asset('uploads/menu/'.$menu->image) }}" alt="placehold.it/350x250" >  
+            	</div>
+            </td>
+        	<td>
+                <div class="col-sm-15">
+					<h4 class="txt5">{{ $menu->name }}</h4>
+					<h4 class="txt25">Rp. {{ $menu->price }} </h4>
+>>>>>>> bb2e19215c32821c75d65d192cced0e344574534
                     <p class="txt23"> {{ $menu->description }}
                     </p>
                 </div>
@@ -65,6 +83,7 @@
 			
        
       <br>
+<<<<<<< HEAD
 		
 		<div class="pagination flex-c-m flex-w p-l-15 p-r-15 m-t-24 m-b-50">
 			<a href="#" class="item-pagination flex-c-m trans-0-4 active-pagination">1</a>
@@ -101,6 +120,34 @@
 		</form>
 	</div>
 
+=======
+	
+	</div>
+
+	<!-- Sign up -->
+	<div class="section-signup bg1-pattern p-t-85 p-b-85">
+		<form class="flex-c-m flex-w flex-col-c-m-lg p-l-5 p-r-5" method="post" action="{{ route('Transaction.chooseorder') }}">
+		{{ csrf_field() }}
+			<span class="txt5 m-10">
+				Choose Menu 
+			</span>
+			<input name="orderId" type="hidden" value="{{$order->id}}">
+			<input name="goals" type="hidden" value="{{$order->goals}}">
+			
+			<select class="wrap-input-signup size17 bo2 bo-rad-10 bgwhite pos-relative txt10 m-10" name="package" required="required">
+			@foreach($packages as $key=>$package)
+												<option>{{$package->package}}</option>
+			@endforeach
+                                            </select>
+			
+			<!-- Button3 -->
+			<button type="submit" class="btn3 flex-c-m size18 txt11 trans-0-4 m-10">
+				Choose
+			</button>
+		</form>
+	</div>
+
+>>>>>>> bb2e19215c32821c75d65d192cced0e344574534
 	
 
 
