@@ -18,9 +18,7 @@
 <div class="container">
 <div class="row">
       <div class="col-xs-12 col-sm-9">
-        
-       
-
+        @foreach($finish as $finish)
         <!-- User info -->
         <div class="panel panel-default">
           <div class="panel-heading">
@@ -33,23 +31,23 @@
               <tbody>
                 <tr>
                   <th><strong>Goals</strong></th>
-                  <td>Weight Loss</td>
+                  <td>{{ $finish->goals }}</td>
                 </tr>
                 <tr>
-                  <th><strong>Menu</strong></th>
-                  <td>A</td>
+                  <th><strong>Package</strong></th>
+                  <td>{{ $finish->package }}</td>
                 </tr>
                 <tr>
                   <th><strong>Time</strong></th>
-                  <td>Breakfast</td>
+                  <td>{{ $finish->time }}</td>
                 </tr>
                 <tr>
                   <th><strong>Start</strong></th>
-                  <td>28-08-2019</td>
+                  <td>{{ $finish->start }}</td>
                 </tr>
                 <tr>
-                  <th><strong>End</strong></th>
-                  <td>28-09-2019</td>
+                  <th><strong>Days</strong></th>
+                  <td>{{ $finish->days }}</td>
                 </tr>
                  <tr>
                   <th><strong>Status</strong></th>
@@ -57,8 +55,7 @@
                 </tr>
                 <tr>
                   <th>
-                    <a href="#" class=" btn btn-lg btn-success col-md-4" > Received</a> 
-                    <a href="#" class="profile__contact-btn btn btn-lg  btn-danger col-md-4" > Not Received</a> 
+                   
                     
                     </th>
                     <td><a href='{{url("/review")}}' class=" btn btn-lg  btn-info col-md-7">
@@ -68,9 +65,10 @@
             </table>
           </div>
         </div>
-
-        <!-- User info -->
-        <div class="panel panel-default">
+        @endforeach
+        @foreach($progress as $progress)
+         <!-- User info -->
+         <div class="panel panel-default">
           <div class="panel-heading">
           <h4 class="panel-title"><span class="txt9">
                   <h3>In progress</h3>
@@ -81,31 +79,76 @@
               <tbody>
                 <tr>
                   <th><strong>Goals</strong></th>
-                  <td>Weight Loss</td>
+                  <td>{{ $progress->goals }}</td>
                 </tr>
                 <tr>
-                  <th><strong>Menu</strong></th>
-                  <td>A</td>
+                  <th><strong>Package</strong></th>
+                  <td>{{ $progress->package }}</td>
                 </tr>
                 <tr>
                   <th><strong>Time</strong></th>
-                  <td>Breakfast</td>
+                  <td>{{ $progress->time }}</td>
                 </tr>
                 <tr>
                   <th><strong>Start</strong></th>
-                  <td>28-08-2019</td>
+                  <td>{{ $progress->start }}</td>
                 </tr>
                 <tr>
-                  <th><strong>End</strong></th>
-                  <td>28-09-2019</td>
+                  <th><strong>Days</strong></th>
+                  <td>{{ $progress->days }}</td>
+                </tr>
+                 <tr>
+                  <th><strong>Status</strong></th>
+                  <td>In progress</td>
+                </tr>
+                <tr>
+                  <th>
+                    <a href="#" class=" btn btn-lg btn-success col-md-4" > Received</a> 
+                    <a href="#" class="profile__contact-btn btn btn-lg  btn-danger col-md-4" > Not Received</a> 
+                    
+                    </th>
+                    
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        @endforeach
+        @foreach($unverified as $unverified)
+        <!-- User info -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+          <h4 class="panel-title"><span class="txt9">
+                  <h3>Unverified</h3>
+                </span></h4>
+          </div>
+          <div class="panel-body">
+            <table class="table profile__table">
+              <tbody>
+                <tr>
+                  <th><strong>Goals</strong></th>
+                  <td>{{ $unverified->goals }}</td>
+                </tr>
+                <tr>
+                  <th><strong>Package</strong></th>
+                  <td>{{ $unverified->package }}</td>
+                </tr>
+                <tr>
+                  <th><strong>Time</strong></th>
+                  <td>{{ $unverified->time }}</td>
+                </tr>
+                <tr>
+                  <th><strong>Start</strong></th>
+                  <td>{{ $unverified->start }}</td>
+                </tr>
+                <tr>
+                  <th><strong>Days</strong></th>
+                  <td>{{ $unverified->days }}</td>
                 </tr>
                </tbody>
             </table>
-                    <form action="" method="post" enctype="multipart/form-data" id="js-upload-form">
-                <input type="file" name="files[]" id="js-upload-files" multiple>
-              <button type="submit" class="profile__contact-btn btn btn-lg btn-info col-md-3" id="js-upload-submit">Upload Invoice</button>
-            <!-- </div> -->
-          </form>
+            <a href="{{ route('transaction.edit',$unverified->id) }}" class="btn btn-success pull-right">Pay Now</a>
+                    
                 
               
           </div>
@@ -114,10 +157,10 @@
 
       </div>
       <div class="col-xs-12 col-sm-3">
-        
+        @endforeach
         <!-- Contact user -->
         <p>
-          <a href="#" class="profile__contact-btn btn btn-lg btn-block btn-info" ">
+          <a href="#" class="profile__contact-btn btn btn-lg btn-block btn-info">
             Contact Admin
           </a>
         </p>

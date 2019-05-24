@@ -53,13 +53,13 @@ Route::get('/menu-regular', 'ReController@index')->name('menure');
 //     return view('menu.re');
 // });
 
-Route::get('/history', function () {
-    return view('history');
-});
+// Route::get('/history', function () {
+//     return view('history');
+// });
 
-Route::get('/konfirmasi', function () {
-    return view('konfirmasi');
-});
+// Route::get('/konfirmasi', function () {
+//     return view('konfirmasi');
+// });
 
 Route::get('/review', function () {
     return view('review');
@@ -76,9 +76,11 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/menu', 'ordercontroller@order')->name('order.order');
 Route::post('/konfirmasi', 'ordercontroller@saveorder')->name('order.saveorder');
-Route::post('/history', 'ordercontroller@ordered')->name('order.ordered');
-Route::post('/konfirmasi2', 'TransactionController@StoreTransaction')->name('transaction.create');
-
+Route::post('/konfirmasi2', 'ordercontroller@ordered')->name('order.ordered');
+Route::post('/history', 'TransactionController@StoreTransaction')->name('transaction.create');
+Route::get('/history/{user_id}','TransactionController@history')->name('history.index');
+Route::get('/historydetail/{transaction_id}', 'TransactionController@transactionEdit')->name('transaction.edit');
+Route::post('/historydetail/{transaction_id}','TransactionController@paymentStore')->name('payment.store');
 
 Route::group(['prefix'=> 'admin', 'middleware' => ['admin', 'auth']], function(){
 
