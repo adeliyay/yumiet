@@ -66,30 +66,7 @@ class ordercontroller extends Controller
         $order->phone = $request->phone;
         $order->address = $request->address;
         $order->save();
-<<<<<<< HEAD
-        return view('history', compact('order'));
-=======
-        if($order->goals=="Regular"){
-            $menus = menu::all();
-            $packages = package::all();
-            return view('menu.re', compact('menus','packages','order'));
-        }
-        elseif($order->goals=="Weight Loss"){
-            $menus = menu::all();
-            $packages = package::all();
-            return view('menu.wl', compact('menus','packages','order'));
-        }
-        elseif($order->goals=="Muscle Building"){
-            $menus = menu::all();
-            $packages = package::all();
-            return view('menu.mb', compact('menus','packages','order'));
-        }
-        elseif($order->goals=="Special Needs"){
-            $menus = menu::all();
-            $packages = package::all();
-            return view('menu.sn', compact('menus','packages','order'));
-        }
->>>>>>> bb2e19215c32821c75d65d192cced0e344574534
+        return view('konfirmasi2', compact('order'));
     }
     public function admin (){
         $orders = order::with('user')->paginate();;

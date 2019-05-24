@@ -10,9 +10,8 @@ class Transaction extends Model
     {
     	return $this->belongsTo('App\Menu');
     }
-
     public function order()
     {
-    	return $this->belongsTo('App\order', 'order_id');
+    	return $this->belongsTo('App\order');
     }
 }

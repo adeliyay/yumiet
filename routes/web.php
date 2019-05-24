@@ -77,6 +77,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/menu', 'ordercontroller@order')->name('order.order');
 Route::post('/konfirmasi', 'ordercontroller@saveorder')->name('order.saveorder');
 Route::post('/history', 'ordercontroller@ordered')->name('order.ordered');
+Route::post('/konfirmasi2', 'TransactionController@StoreTransaction')->name('transaction.create');
 
 
 Route::group(['prefix'=> 'admin', 'middleware' => ['admin', 'auth']], function(){

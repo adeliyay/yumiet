@@ -21,11 +21,7 @@
 			</button> -->
 			@foreach($packages as $key=>$package)
 			<button class="label-gallery txt26 trans-0-4" data-filter=".{{$package->package}}">
-<<<<<<< HEAD
 				Package {{$package->package}}
-=======
-				Special Needs {{$package->package}}
->>>>>>> bb2e19215c32821c75d65d192cced0e344574534
 			</button>
 		@endforeach
 		</div>

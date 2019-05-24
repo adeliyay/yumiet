@@ -6,11 +6,7 @@
 	<!-- Title Page -->
 	<section class="bg-title-page flex-c-m p-t-160 p-b-80 p-l-15 p-r-15" style="background-image: url(images/bg-title-page-02.jpg);">
 		<h2 class="tit6 t-center">
-<<<<<<< HEAD
 		Regular
-=======
-			Regular
->>>>>>> bb2e19215c32821c75d65d192cced0e344574534
 		</h2>
 	</section>
 
