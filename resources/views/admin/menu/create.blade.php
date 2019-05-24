@@ -80,12 +80,12 @@
                                         </div>
                                       </div>
                                     </div>
-                                    <div class="form-group">
+                                 <!--    <div class="form-group">
                                         <label class="col-md-12">Price</label>
                                         <div class="col-md-12">
                                             <input type="number" min="0" class="form-control form-control-line" name="price" required="required">
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <div class="form-group">
                                         <label class="col-md-12">Description</label>
                                         <div class="col-md-12">

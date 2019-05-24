@@ -9,7 +9,7 @@
 		<div class="header-lunch parallax0 parallax100" style="background-image: url(images/header-menu-01.jpg);">
 			<div class="bg1-overlay t-center p-t-170 p-b-165">
 				<h2 class="tit4 t-center">
-					Reguler
+					Regular
 				</h2>
 			</div>
 		</div>
@@ -34,9 +34,7 @@
 								{{ $menu->description }}
 							</span>
 
-							<span class="txt25">
-								Rp. {{ $menu->price }}
-							</span>
+							
 						</div>
 					</div>
 					@endif
@@ -76,9 +74,7 @@
 								{{ $menu->description }}
 							</span>
 
-							<span class="txt25">
-								Rp. {{ $menu->price }}
-							</span>
+							
 						</div>
 					</div>
 					@endif
@@ -118,9 +114,7 @@
 								{{ $menu->description }}
 							</span>
 
-							<span class="txt25">
-								Rp. {{ $menu->price }}
-							</span>
+							
 						</div>
 					</div>
 					@endif
@@ -161,9 +155,7 @@
 								{{ $menu->description }}
 							</span>
 
-							<span class="txt25">
-								Rp. {{ $menu->price }}
-							</span>
+							
 						</div>
 					</div>
 					@endif

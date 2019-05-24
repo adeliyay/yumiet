@@ -20,6 +20,12 @@ class MenuController extends Controller
         return view('admin.menu.index',compact('menus'));
     }
 
+    public function menu()
+    {
+        $menus = Menu::all();
+        return view('menu',compact('menus'));
+    }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -42,7 +48,6 @@ class MenuController extends Controller
             'name' => 'required',
             'package' => 'required',
             'goals' => 'required',
-            'price' => 'required',
             'description' => 'required',
             'image' => 'required|mimes:jpeg,jpg,bmp,png',
         ]);
@@ -64,7 +69,6 @@ class MenuController extends Controller
         $menu->name = $request->name;
         $menu->package = $request->package;
         $menu->goals = $request->goals;
-        $menu->price = $request->price;
         $menu->description = $request->description;
         $menu->image = $imagename;
         $menu->save();
@@ -108,7 +112,6 @@ class MenuController extends Controller
             'name' => 'required',
             'package' => 'required',
             'goals' => 'required',
-            'price' => 'required',
             'description' => 'required',
             'image' => 'mimes:jpeg,jpg,bmp,png',
         ]);
@@ -130,7 +133,6 @@ class MenuController extends Controller
         $menu->name = $request->name;
         $menu->package = $request->package;
         $menu->goals = $request->goals;
-        $menu->price = $request->price;
         $menu->description = $request->description;
         $menu->image = $imagename;
         $menu->save();

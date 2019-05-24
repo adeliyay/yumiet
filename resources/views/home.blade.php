@@ -284,6 +284,7 @@
 		<!-- - -->
 		<div class="wrap-slick3">
 			<div class="slick3">
+				@foreach($reviews as $key=>$review)
 				<div class="item-slick3 item1-slick3">
 					<div class="wrap-content-slide3 p-b-50 p-t-50">
 						<div class="container">
@@ -293,7 +294,7 @@
 
 							<div class="content-review m-t-33 animated visible-false" data-appear="fadeInUp">
 								<p class="t-center txt12 size15 m-l-r-auto">
-									“ We are lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tellus sem, mattis in pre-tium nec, fermentum viverra dui ”
+									{{ $review->message }}
 								</p>
 
 								<div class="star-review fs-18 color0 flex-c-m m-t-12">
@@ -311,6 +312,7 @@
 						</div>
 					</div>
 				</div>
+				@endforeach
 
 				<div class="item-slick3 item2-slick3">
 					<div class="wrap-content-slide3 p-b-50 p-t-50">

@@ -13,12 +13,12 @@
 	<!-- Gallery -->
 	<div class="section-gallery p-t-118 p-b-100">
 		<div class="wrap-label-gallery filter-tope-group size27 flex-w flex-sb-m m-l-r-auto flex-col-c-sm p-l-15 p-r-15 m-b-60">
-			<!-- <button class="label-gallery txt26 trans-0-4 is-actived" data-filter=".i">
-				All Photo
-			</button> -->
+			<button class="label-gallery txt26 trans-0-4 is-actived" data-filter="*">
+				Regular
+			</button>
 			@foreach($packages as $key=>$package)
-			<button class="label-gallery txt26 trans-0-4" data-filter=".{{$package->package}}">
-				Package {{$package->package}}
+			<button class="label-gallery trans-0-4 txt25" data-filter=".{{$package->package}}">
+				Package {{$package->package}} <br> ( Rp {{$package->total_price}} )
 			</button>
 		@endforeach
 		</div>
@@ -47,7 +47,6 @@
         	<td>
                 <div class="col-sm-15 ">
 					<h4 class="txt5">{{ $menu->name }}</h4>
-					<h4 class="txt25">Rp. {{ $menu->price }} </h4>
                     <p class="txt23"> {{ $menu->description }}
                     </p>
                 </div>
