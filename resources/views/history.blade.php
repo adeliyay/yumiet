@@ -153,7 +153,11 @@
                 </tr>
                </tbody>
             </table>
-            <a href="{{ route('transaction.edit',$unverified->id) }}" class="btn btn-success pull-right">Pay Now</a>  
+            @if($unverified->payment==null)
+            <a href="{{ route('transaction.edit',$unverified->id) }}" class="btn btn-success pull-right">Pay Now</a>
+            @else
+            <a>Waiting Verify</a>
+            @endif 
           </div>
         </div>
         @endforeach
