@@ -28,7 +28,7 @@
             <div class="panel-body">
               <div class="row">
               
-                <div class="col-md-3 col-lg-3 " align="center"> <img alt="User Pic" src="images/photo-gallery01.jpg" class=" img-responsive"><?php echo "Package ".$package['package']; ?><br> Rp 50.000</div>
+                <div class="col-md-3 col-lg-3 " align="center"> <img alt="User Pic" src="images/photo-gallery01.jpg" class=" img-responsive">Rp. {{$price[0]}}</div>
               
                <div class=" col-md-9 col-lg-9 "> 
                   <table class="table table-user-information">

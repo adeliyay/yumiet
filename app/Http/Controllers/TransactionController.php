@@ -38,7 +38,8 @@ class TransactionController extends Controller
           ->get();
         $unverified = DB::table('transactions')
           -> join('orders', 'orders.id','=','transactions.order_id' )
-          -> select('transactions.id', 'orders.goals', 'orders.time', 'orders.days', 'orders.package','orders.start')
+          -> where('is_verified','0')
+          -> select('transactions.id','transactions.payment', 'orders.goals', 'orders.time', 'orders.days', 'orders.package','orders.start')
           -> get();
    
         $progress = DB::table('transactions')
@@ -51,6 +52,11 @@ class TransactionController extends Controller
           -> where('is_verified','1')
           -> where('status','1')
           -> get();
+        //   $now = Carbon::now()->format('d/m/20y');
+        //   $now2 = Carbon::now()->format('d');
+        //   $now3 = $now2+5;
+          
+        // if($now3 == "25/05/2019"){$test=1;}
       return view('history', compact('unverified','progress','finish'));
     }
     public function transactionEdit($transaction_id)
@@ -87,5 +93,12 @@ class TransactionController extends Controller
         $transaction->payment = $paymentname;
         $transaction->save();
         return redirect('history/'.$user_id);
+    }
+    public function Received($id)
+    {
+        $transaction = Transaction::find($id);
+        $transaction->status = "1";
+        $transaction->save();
+        return redirect()->back();
     }
 }

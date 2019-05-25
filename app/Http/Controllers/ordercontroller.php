@@ -44,7 +44,11 @@ class ordercontroller extends Controller
     {
         $order = $request->all();
         $package = $request->all();
-        return view('konfirmasi', compact('package','order'));
+        $package2 = $package['package'];
+        $price = DB::table('packages')
+          ->where('package',$package2)
+          ->pluck('total_price');
+        return view('konfirmasi', compact('package','order','price'));
     }
 
     public function ordered(Request $request){
