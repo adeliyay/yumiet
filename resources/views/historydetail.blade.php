@@ -1,15 +1,14 @@
 @extends('layouts.app')
 @section('content')
 
-<head>
+
  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
-</head>
+
 
 <!-- Title Page -->
-  <section class="bg-title-page flex-c-m p-t-160 p-b-80 p-l-15 p-r-15" style="background-image: url(images/bg-title-page-01.jpg);">
+  <section class="bg-title-page flex-c-m p-t-160 p-b-80 p-l-15 p-r-15" style="background-image: url({{asset('images/bg-title-page-01.jpg')}});">
     <h2 class="tit6 t-center">
       History
     </h2>
@@ -17,9 +16,8 @@
   <br>
 <div class="container">
 <div class="row">
+  
       <div class="col-xs-12 col-sm-9">
-       
-      @foreach($order as $orders)
         <!-- User info -->
         <div class="panel panel-default">
           <div class="panel-heading">
@@ -27,7 +25,9 @@
                   <h3>Unverified</h3>
                 </span></h4>
           </div>
+          @foreach($order as $orders)
           <div class="panel-body">
+
             <table class="table profile__table">
               <tbody>
                 <tr>
@@ -56,17 +56,18 @@
           {{ csrf_field() }}
                 <input type="file" name="payment" id="js-upload-files" multiple>
               <button type="submit" class="profile__contact-btn btn btn-lg btn-info col-md-3" id="js-upload-submit">Upload Invoice</button>
-            </div>
-          </form> 
-                
-              
+            
+          </form>  
+          </div>
+            @endforeach   
           </div>
         </div>
   
 
-      </div>
+
+     
       <div class="col-xs-12 col-sm-3">
-        @endforeach
+        
         <!-- Contact user -->
         <p>
           <a href="#" class="profile__contact-btn btn btn-lg btn-block btn-info">
