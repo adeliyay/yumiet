@@ -76,7 +76,7 @@
             <input type="hidden" id="phone" name="phone" value=<?php echo $order['phone']; ?>>
             <input type="hidden" id="address" name="address" value=<?php echo $order['address']; ?>>
         <!-- <button type="button" href='/edit?>' class="btn btn-primary">Edit</button> -->
-        <button type="submit" class="btn btn-success">Konfirmasi</button>
+        <button type="submit" class="btn btn-success">Confirm</button>
 
       </form>
                  

@@ -8,22 +8,23 @@
         Tip 2: you can also add an image using data-image tag
     -->
       <div class="logo">
-        <a href="http://www.creative-tim.com" class="simple-text logo-normal">
-          Creative Tim
+        <a href='{{url("admin")}}' class="simple-text logo-normal">
+          Admin page
         </a>
       </div>
       <div class="sidebar-wrapper">
         <ul class="nav">
-          <li class="nav-item active  ">
-            <a class="nav-link" href='{{url("admin")}}'>
+
+          <li class="nav-item  ">
+            <a class="nav-link" href='{{url("admin/package")}}'>
               <i class="material-icons">dashboard</i>
-              <p>Dashboard</p>
+              <p>Package</p>
             </a>
           </li>
           <li class="nav-item ">
             <a class="nav-link" href='{{url("admin/order")}}'>
               <i class="material-icons">content_paste</i>
-              <p>Table List</p>
+              <p>Order List</p>
             </a>
           </li>
           <li class="nav-item ">
