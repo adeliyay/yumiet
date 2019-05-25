@@ -29,28 +29,28 @@
 <!--===============================================================================================-->
 	<link rel="icon" type="image/png" href="images/icons/favicon.png"/>
 <!--===============================================================================================-->
-	<link rel="stylesheet" href="{{ asset('css/bootstrap/css/bootstrap.min.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap/css/bootstrap.min.css') }}">
 <!--===============================================================================================-->
-	<link rel="stylesheet"  href="{{ asset('fonts/font-awesome-4.7.0/css/font-awesome.min.css') }}">
+	<link rel="stylesheet" type="text/css"  href="{{ asset('fonts/font-awesome-4.7.0/css/font-awesome.min.css') }}">
 <!--===============================================================================================-->
-	<link rel="stylesheet"  href="{{ asset('fonts/themify/themify-icons.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('fonts/themify/themify-icons.css') }}">
 <!--===============================================================================================-->
 	<link rel="stylesheet" href="{{ asset('css/animate/animate.css') }}">
 <!--===============================================================================================-->
-	<link rel="stylesheet" href="{{ asset('css/css-hamburgers/hamburgers.min.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/css-hamburgers/hamburgers.min.css') }}">
 <!--===============================================================================================-->
-	<link rel="stylesheet" href="{{ asset('css/animsition/css/animsition.min.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/animsition/css/animsition.min.css') }}">
 <!--===============================================================================================-->
-	<link rel="stylesheet" href="{{ asset('css/select2/select2.min.css') }}">
+	<link rel="stylesheet"type="text/css" href="{{ asset('css/select2/select2.min.css') }}">
 <!--===============================================================================================-->
-	<link rel="stylesheet"  href="{{ asset('css/daterangepicker/daterangepicker.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/daterangepicker/daterangepicker.css') }}">
 <!--===============================================================================================-->
-	<link rel="stylesheet"  href="{{ asset('css/slick/slick.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/slick/slick.css') }}">
 <!--===============================================================================================-->
-	<link rel="stylesheet" href="{{ asset('css/lightbox2/css/lightbox.min.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/lightbox2/css/lightbox.min.css') }}">
 <!--===============================================================================================-->
-	<link rel="stylesheet"  href="{{ asset('css/util.css') }}">
-	<link rel="stylesheet"  href="{{ asset('css/main.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/util.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/main.css') }}">
 <!--===============================================================================================-->
 </head>
 <body class="animsition">
@@ -410,31 +410,31 @@
 		</div>
 	</footer>
  <!--===============================================================================================-->
-	<script src="{{ asset('css/jquery/jquery-3.2.1.min.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('css/jquery/jquery-3.2.1.min.js') }}"></script>
 <!--===============================================================================================-->
-	<script  src="{{ asset('css/animsition/js/animsition.min.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('css/animsition/js/animsition.min.js') }}"></script>
 <!--===============================================================================================-->
-	<script  src="{{ asset('css/bootstrap/js/popper.js') }}"></script>
-	<script  src="{{ asset('css/bootstrap/js/bootstrap.min.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('css/bootstrap/js/popper.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('css/bootstrap/js/bootstrap.min.js') }}"></script>
 <!--===============================================================================================-->
-	<script  src="{{ asset('css/select2/select2.min.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('css/select2/select2.min.js') }}"></script>
 <!--===============================================================================================-->
-	<script  src="{{ asset('css/daterangepicker/moment.min.js') }}"></script>
-	<script  src="{{ asset('css/daterangepicker/daterangepicker.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('css/daterangepicker/moment.min.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('css/daterangepicker/daterangepicker.js') }}"></script>
 <!--===============================================================================================-->
-	<script  src="{{ asset('css/slick/slick.min.js') }}"></script>
-	<script  src="{{ asset('js/slick-custom.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('css/slick/slick.min.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('js/slick-custom.js') }}"></script>
 <!--===============================================================================================-->
-	<script src="{{ asset ('css/parallax100/parallax100.js') }}"></script>
+	<script type="text/javascript" src="{{ asset ('css/parallax100/parallax100.js') }}"></script>
 	<script type="text/javascript">
         $('.parallax100').parallax100();
 	</script>
 <!--===============================================================================================-->
-	<script  src="{{ asset('css/countdowntime/countdowntime.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('css/countdowntime/countdowntime.js') }}"></script>
 <!--===============================================================================================-->
-	<script  src="{{ asset('css/lightbox2/js/lightbox.min.js') }}"></script>
+	<script type="text/javascript"  src="{{ asset('css/lightbox2/js/lightbox.min.js') }}"></script>
 <!--===============================================================================================-->
-	<script src="{{ asset('js/main.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('js/main.js') }}"></script>
 
 
 

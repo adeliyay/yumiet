@@ -25,8 +25,11 @@ class HomeController extends Controller
     public function index()
     {
         $reviews = review::all();
-        return view('home',compact('reviews');
+        return view('home',compact('reviews'));
     }
-
+    public function home()
+    {
+        return view('home');
+    }
     
 }

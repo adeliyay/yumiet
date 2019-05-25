@@ -14,15 +14,15 @@
       <div class="sidebar-wrapper">
         <ul class="nav">
           <li class="nav-item   ">
-            <a class="nav-link" href='{{url("admin")}}'>
+            <a class="nav-link" href='{{url("admin/package")}}'>
               <i class="material-icons">dashboard</i>
-              <p>Dashboard</p>
+              <p>Package</p>
             </a>
           </li>
           <li class="nav-item active ">
             <a class="nav-link" href='{{url("admin/order")}}'>
               <i class="material-icons">content_paste</i>
-              <p>Table List</p>
+              <p>Order List</p>
             </a>
           </li>
           <li class="nav-item ">
@@ -74,20 +74,57 @@
                           Detail
                         </th>
                         <th>
+                          Verify Status
+                        </th>
+                        <th>
                           Action
                         </th>
                       </thead>
                      <tbody>
-                     @foreach($orders as $key=>$order)
+                     @foreach($transaction as $key=>$transaction)
                       <tr>
                                 <td>{{ $key + 1 }}</td>
-                                <td>{{ $order->user->name }}</td>
-                                <td>{{ $order->goals }}</td>
-                                <td>{{ $order->time }}</td>
-                                <td>{{ $order->start }}</td>
-                                <td>{{ $order->days }}</td>
-                                <td>{{ $order->gender }}</td>
-                      </tr>
+                                <td>{{ $transaction->name }}</td>
+                                <td>{{ $transaction->goals }}</td>
+                                <td>{{ $transaction->time }}</td>
+                                <td>{{ $transaction->start }}</td>
+                                <td>{{ $transaction->days }}</td>
+                                <td>{{ $transaction->gender }}</td>
+                                <td><img class="img-responsive img-thumbnail" src="{{ asset('uploads/menu/'.$transaction->payment) }}" style="height: 100px; width: 100px" alt=""></td>
+                      <td>
+                                  @if($transaction->is_verified == "1" )
+                                    <span class="label label-info">Confirmed</span>
+                                  @else
+                                    <span class="label label-danger">Not Confirmed Yet</span>
+                                  @endif
+                                </td>
+                  
+                                <td>
+                                  @if($transaction->is_verified == "0")  
+                                      <form id="status-form-{{ $transaction->id }}" 
+                                      action="{{ route('order.status', $transaction->id)}}" style="" method="POST">
+                                      @csrf
+                                      </form>
+                                    <button type="button" class="btn btn-info btn-sm" onclick="if(confirm('Are you verify this request by phone?')){
+                                      event.preventDefault();
+                                      document.getElementById('status-form-{{ $transaction->id }}').submit();
+                                    }else {
+                                      event.preventDefault();}"><i class="material-icons">done</i></button>
+                                  @endif
+                                  <form id="delete-form-{{ $transaction->id }}" 
+                                  action="{{ route('order.destroy', $transaction->id)}}" style="..." method="POST">
+                                  @csrf
+                                  @method('DELETE')
+                                  </form>
+                                <button type="button" class="btn btn-danger btn-sm" onclick="if(confirm('Are you sure? You want to delete this?')){
+                                  event.preventDefault();
+                                  document.getElementById('delete-form-{{ $transaction->id }}').submit();
+                                }else {
+                                  event.preventDefault();
+                                }"><i class="material-icons">delete</i></button>
+                              </td>
+                            </tr>
+                        
                       @endforeach
                      </tbody>
                     </table>

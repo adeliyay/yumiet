@@ -11,9 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
 
 Route::get('/login', function () {
     return view('auth.login');
@@ -74,6 +71,8 @@ Route::get('/detail', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/menu', 'MenuController@menu')->name('menu');
+Route::get('/', 'HomeController@home');
 Route::post('/menu', 'ordercontroller@order')->name('order.order');
 Route::post('/konfirmasi', 'ordercontroller@saveorder')->name('order.saveorder');
 Route::post('/konfirmasi2', 'ordercontroller@ordered')->name('order.ordered');
@@ -91,7 +90,8 @@ Route::group(['prefix'=> 'admin', 'middleware' => ['admin', 'auth']], function()
         return view('admin.admin');
     });
     Route::get('/order', 'ordercontroller@admin')->name('admin.order.index');
-
+    Route::post('/order{id}', 'ordercontroller@status')->name('order.status');
+    Route::delete('/order{id}', 'ordercontroller@destroy')->name('order.destroy');
     Route::get('/menu', function(){
         return view('admin.menu');
     });

@@ -22,15 +22,15 @@
       <div class="sidebar-wrapper">
         <ul class="nav">
           <li class="nav-item active">
-            <a class="nav-link" href='{{url("admin")}}'>
+            <a class="nav-link" href='{{url("admin/package")}}'>
               <i class="material-icons">dashboard</i>
-              <p>Dashboard</p>
+              <p>Package</p>
             </a>
           </li>
           <li class="nav-item ">
             <a class="nav-link" href='{{url("admin/order")}}'>
               <i class="material-icons">content_paste</i>
-              <p>Table List</p>
+              <p>Order List</p>
             </a>
           </li>
           <li class="nav-item">

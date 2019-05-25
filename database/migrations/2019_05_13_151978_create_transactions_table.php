@@ -19,8 +19,6 @@ class CreateTransactionsTable extends Migration
             $table->boolean('is_verified')->default('0');
             $table->string('payment')->nullable();
             $table->boolean('status')->default('0');
-            $table->foreign('order_id')
-                ->references('id')->on('orders');
             $table->timestamps();
         });
     }

@@ -2,10 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use DB;
+use App\Transaction;
+use App\menu;
 use App\order;
-use App\User;
-use App\Menu;
 use App\package;
+use App\User;
+use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\ReController;
 use Illuminate\Http\Request;
@@ -69,7 +72,24 @@ class ordercontroller extends Controller
         return view('konfirmasi2', compact('order'));
     }
     public function admin (){
-        $orders = order::with('user')->paginate();;
-        return view('admin.order.index', compact('orders'));
+        $transaction = DB::table('orders')
+          -> join('transactions', 'transactions.order_id','=','orders.id')
+          -> join('users', 'users.id','=','orders.user_id')
+          -> select('users.name','transactions.*','orders.user_id','orders.gender', 'orders.goals', 'orders.time', 'orders.days', 'orders.package','orders.start')
+          -> get();
+        return view('admin.order.index', compact('transaction','user_id', 'name'));
+    }
+
+    public function status($id)
+    {
+        $transaction = Transaction::find($id);
+        $transaction->is_verified = "1";
+        $transaction->save();
+        return redirect()->back();
+    }
+    public function destroy($id)
+    {
+        Transaction::find($id)->delete();
+        return redirect()->back();
     }
 }
