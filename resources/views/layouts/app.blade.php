@@ -109,10 +109,13 @@
                             @endif
                         </ul>
                         @else
-                        	<ul class="main_menu">	
+                        	<ul class="main_menu">
+                        	@auth	
                             <li class="nav-item ">
-                                <a class="nav-link" href='{{url("/history/Auth::user->id")}}' >{{ Auth::user()->name }} </a>
+                            	<?php $user = Auth::user(); ?>
+                                <a class="nav-link" href='history/<?php echo $user->id ?>' >{{ Auth::user()->name }} </a>
                              </li>
+                             @endauth
                              <li class="nav-item ">
                                  <a class="nav-link" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();

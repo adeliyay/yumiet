@@ -39,6 +39,7 @@ class TransactionController extends Controller
         $unverified = DB::table('transactions')
           -> join('orders', 'orders.id','=','transactions.order_id' )
           -> where('is_verified','0')
+          -> where('user_id',$user_id)
           -> select('transactions.id','transactions.payment', 'orders.goals', 'orders.time', 'orders.days', 'orders.package','orders.start')
           -> get();
    
@@ -46,11 +47,13 @@ class TransactionController extends Controller
           -> join('orders', 'transactions.order_id', '=', 'orders.id')
           -> where('is_verified','1')
           -> where('status','0')
+          -> where('user_id',$user_id)
           -> get();
         $finish = DB::table('transactions')
           -> join('orders', 'transactions.order_id', '=', 'orders.id')
           -> where('is_verified','1')
           -> where('status','1')
+          -> where('user_id',$user_id)
           -> get();
         //   $now = Carbon::now()->format('d/m/20y');
         //   $now2 = Carbon::now()->format('d');

@@ -71,6 +71,7 @@ Route::get('/detail', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/konfirmasi', 'ordercontroller@price')->name('price');
 Route::get('/menu', 'MenuController@menu')->name('menu');
 Route::get('/', 'HomeController@home');
 Route::post('/menu', 'ordercontroller@order')->name('order.order');

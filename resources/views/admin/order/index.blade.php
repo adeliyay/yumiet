@@ -105,7 +105,7 @@
                                       action="{{ route('order.status', $transaction->id)}}" style="" method="POST">
                                       @csrf
                                       </form>
-                                    <button type="button" class="btn btn-info btn-sm" onclick="if(confirm('Are you verify this request by phone?')){
+                                    <button type="button" class="btn btn-info btn-sm" onclick="if(confirm('Are you sure verify this order?')){
                                       event.preventDefault();
                                       document.getElementById('status-form-{{ $transaction->id }}').submit();
                                     }else {
